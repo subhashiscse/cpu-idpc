@@ -1,0 +1,22 @@
+.footer{
+    height: 80px !important;
+    width: 100% !important;
+    background-color: #28479b;
+}
+.footer-heading{
+    color: #fff
+}
+.footer-social-media {
+    margin: 15px 0;
+}
+
+.footer-social-media a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.footer-social-media a:hover {
+    color: #ddd;
+}

@@ -1,0 +1,43 @@
+.font-merriweather {
+    font-family: Merriweather, serif;
+}
+.py-2\.5 {
+    padding-top: .625rem;
+    padding-bottom: .625rem;
+}
+.px-3 {
+    padding-left: .75rem;
+    padding-right: .75rem;
+}
+.bg-opacity-10 {
+    --tw-bg-opacity: .1;
+}
+.bg-amber-600 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(217 119 6 / var(--tw-bg-opacity));
+}
+.border-opacity-50 {
+    --tw-border-opacity: .5;
+}
+.border-orange-600 {
+    --tw-border-opacity: 1;
+    border-color: rgb(234 88 12 / var(--tw-border-opacity));
+}
+.border {
+    border-width: 1px;
+}
+.rounded-3xl {
+    border-radius: 1.5rem;
+}
+.gap-3 {
+    gap: .75rem;
+}
+.justify-start {
+    justify-content: flex-start;
+}
+.items-center {
+    align-items: center;
+}
+.inline-flex {
+    display: inline-flex;
+}

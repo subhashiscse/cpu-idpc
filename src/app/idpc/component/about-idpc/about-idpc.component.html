@@ -1,0 +1,43 @@
+<div style="width: 90%; height: 520px;margin-top:20px;margin-left: 5%;">
+    <mat-card fxLayout="column" fxFlex="100" class="example-card">
+        <h2>About IDPC</h2>
+        <div fxLayout="row" fxLayoutAlign="start center" fxFlex="100">
+            <div fxFlex="30">
+                <img
+                    width="100%"
+                    height="380px"
+                    alt="Angular Logo"
+                    src=".././assets/images/idpc-event.jpg"
+                />
+            </div>
+            <div fxLayout="column" fxFlex="70" fxLayoutGap="20px">
+                <h2>Important Date & Time</h2>
+                <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+                    <ng-container matColumnDef="Position">
+                      <th mat-header-cell *matHeaderCellDef> No. </th>
+                      <td mat-cell *matCellDef="let element"> {{element.Position}} </td>
+                    </ng-container>
+                    <ng-container matColumnDef="EventName">
+                      <th mat-header-cell *matHeaderCellDef> Event Name </th>
+                      <td mat-cell *matCellDef="let element"> {{element.EventName}} </td>
+                    </ng-container>
+                  
+                    <ng-container matColumnDef="StartTime">
+                      <th mat-header-cell *matHeaderCellDef> Start Time </th>
+                      <td mat-cell *matCellDef="let element"> {{element.StartTime}} </td>
+                    </ng-container>
+                    <ng-container matColumnDef="EndTime">
+                      <th mat-header-cell *matHeaderCellDef> End Time </th>
+                      <td mat-cell *matCellDef="let element"> {{element.EndTime}} </td>
+                    </ng-container>
+                    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+                </table>                  
+            </div>
+        </div>
+        <a href="https://facebook.com" target="_blank"><button mat-raised-button color="primary"
+                class="submit-button legacy-bold text-uppercase"  aria-label="LOGIN">
+            Registration Link
+        </button></a>
+    </mat-card>
+</div>
