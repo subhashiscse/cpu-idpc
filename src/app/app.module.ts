@@ -10,6 +10,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material/material.module';
 import { IdpcModule } from './idpc/idpc/idpc.module';
 import { SeminarModule } from './seminar/seminar/seminar.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { SeminarModule } from './seminar/seminar/seminar.module';
     BrowserAnimationsModule,
     MaterialModule,
     IdpcModule,
-    SeminarModule
+    SeminarModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
