@@ -25,7 +25,7 @@ module.exports = function (config) {
       suppressAll: true // removes the duplicated traces
     },
     coverageReporter: {
-      dir: require('path').join(__dirname, './coverage/cpu-idpc'),
+      dir: require('path').join(__dirname, './coverage/cpuidpc'),
       subdir: '.',
       reporters: [
         { type: 'html' },
