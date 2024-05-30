@@ -7,7 +7,6 @@ import { SlideInterface } from './image-slider/types/slider.interface';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-
 export class AppComponent {
   slides: SlideInterface[] = [
     { url: '/assets/images/slider-1.jpg', title: 'beach' },
