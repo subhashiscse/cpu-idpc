@@ -2,31 +2,55 @@ export const NavigationMenuList = [
     {
         Name:'HOME',
         FxFlex: 15,
-        URL: ''
+        Url: '',
+        SubeMenuList:[
+            {
+                Name:'Home 1',
+                FxFlex: 15,
+                Url: '',
+            },
+            {
+                Name:'Home 2',
+                FxFlex: 15,
+                Url: '',
+            }
+        ]
     },
     {
         Name:'IDPC',
         FxFlex: 15,
-        URL: '/idpc'
+        Url: '/idpc',
+        SubeMenuList:[
+            {
+                Name:'Home 1',
+                FxFlex: 15,
+                Url: '',
+            },
+            {
+                Name:'Home 2',
+                FxFlex: 15,
+                Url: '',
+            }
+        ]
     },
     {
         Name:'SEMINAR',
         FxFlex: 15,
-        URL: '/seminar'
+        Url: '/seminar'
     },
     {
-        Name:'REGISTRATION',
+        Name:'COMITTEE',
         FxFlex: 15,
-        URL: '/registration'
+        Url: '/comittee'
     },
     {
         Name:'GALLERY',
         FxFlex: 15,
-        URL: '/gallery'
+        Url: '/gallery'
     },
     {
         Name:'CONTACT US',
         FxFlex: 15,
-        URL: '/contactus'
+        Url: '/contactus'
     }
 ]

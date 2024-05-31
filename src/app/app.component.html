@@ -314,10 +314,14 @@
       />
     </div>
     <div fxLayout="row" fxLayoutAlign="center" fxFlex="100">
-      <div *ngFor="let navMenu of navigationList" fxFlex="{{navMenu.FxFlex}}">
-        <div class="font-size-16 font-weight-700" >
-          <a class="nav-menu" [routerLink]="[navMenu.URL]">{{navMenu.Name}}</a>
-        </div>
+      <div class="menu-item" *ngFor="let navMenu of navigationList" fxFlex="{{navMenu.FxFlex}}">
+        <div >{{navMenu.Name}}</div>
+        <div *ngIf="navMenu.SubeMenuList"></div>
+        <ul class="submenu">
+          <div *ngFor="let submenu of navMenu.SubeMenuList">
+            <li class="submenu-item">{{submenu.Name}}</li>
+          </div>
+        </ul>
       </div>
     </div>
   </div>
