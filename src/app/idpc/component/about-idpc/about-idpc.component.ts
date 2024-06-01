@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ExcelService } from 'src/shared/excel.service';
+import { ActivatedRoute, Router } from '@angular/router';
 export interface TimeSchedule {
   EventName: string;
   Position: number;
@@ -27,7 +28,11 @@ export class AboutIdpcComponent implements OnInit {
   excelData: any[] = [];
   excelUrl: string = 'https://docs.google.com/spreadsheets/d/1vtkTMVeys3uBJ-CSF0zvPpErBXd1kO59OD6sf7Bq9ok/edit?usp=sharing'; // Replace with your URL
 
-  constructor(private excelService: ExcelService) { }
+  constructor(
+    private excelService: ExcelService,
+    private router: Router) {
+
+  }
 
   ngOnInit(): void {
     this.excelService.fetchExcelFile(this.excelUrl).subscribe(
@@ -63,5 +68,14 @@ export class AboutIdpcComponent implements OnInit {
       count++;
       startingRow++;
     }
+  }
+  navigateToRegistrationLink(){
+    
+  }
+  navigateToRegisteredTeamList(){
+    this.router.navigate(['/registered-team-list']);
+  }
+  navigateToFinalTeamList(){
+    this.router.navigate(['/final-team-list']);
   }
 }

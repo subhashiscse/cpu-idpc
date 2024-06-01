@@ -35,9 +35,19 @@
                 </table>                  
             </div>
         </div>
-        <a href="https://facebook.com" target="_blank"><button mat-raised-button color="primary"
-                class="submit-button legacy-bold text-uppercase"  aria-label="LOGIN">
-            Registration Link
-        </button></a>
+        <div fxFlex="row" fxFlex="100">
+          <button mat-raised-button color="primary"
+                  class="submit-button legacy-bold text-uppercase"  aria-label="REGISTRATION_LINK" (click)="navigateToRegistrationLink()">
+              Registration Link
+          </button>
+          <button mat-raised-button color="primary"
+                class="submit-button legacy-bold text-uppercase ml-12"  aria-label="REGISTERED_TEAM_LIST" (click)="navigateToRegisteredTeamList()">
+            Registered Team List
+          </button>
+          <button mat-raised-button color="primary"
+                class="submit-button legacy-bold text-uppercase ml-12"  aria-label="FINAL_TEAM_LIST" (click)="navigateToFinalTeamList()">
+            Final Team List
+          </button>
+        </div>
     </mat-card>
 </div>

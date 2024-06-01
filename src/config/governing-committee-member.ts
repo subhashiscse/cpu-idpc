@@ -11,48 +11,48 @@ export const GoverningCommitteeMemberList: OrganizingCommittee[] = [
         Email:'test1@example.com',
         Designation: 'Student',
         Session: "2018-19",
-        ImageUrl: './assets/images/logo.jpg'
+        ImageUrl: './assets/images/person.jpg'
     },
     {
         Name:'Rabbani Islam Refat',
         Email:'test1@example.com',
         Designation: 'Student',
         Session: "2018-19",
-        ImageUrl: './assets/images/logo.jpg'
+        ImageUrl: './assets/images/person.jpg'
     },
     {
         Name:'Rabbani Islam Refat',
         Email:'test1@example.com',
         Designation: 'Student',
         Session: "2018-19",
-        ImageUrl: './assets/images/logo.jpg'
+        ImageUrl: './assets/images/person.jpg'
     },
     {
         Name:'Rabbani Islam Refat',
         Email:'test1@example.com',
         Designation: 'Student',
         Session: "2018-19",
-        ImageUrl: './assets/images/logo.jpg'
+        ImageUrl: './assets/images/person.jpg'
     },
     {
         Name:'Rabbani Islam Refat',
         Email:'test1@example.com',
         Designation: 'Student',
         Session: "2018-19",
-        ImageUrl: './assets/images/logo.jpg'
+        ImageUrl: './assets/images/person.jpg'
     },
     {
         Name:'Rabbani Islam Refat',
         Email:'test1@example.com',
         Designation: 'Student',
         Session: "2018-19",
-        ImageUrl: './assets/images/logo.jpg'
+        ImageUrl: './assets/images/person.jpg'
     },
     {
         Name:'Rabbani Islam Refat',
         Email:'test1@example.com',
         Designation: 'Student',
         Session: "2018-19",
-        ImageUrl: './assets/images/logo.jpg'
+        ImageUrl: './assets/images/person.jpg'
     }    
 ]

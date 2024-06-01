@@ -12,7 +12,7 @@ export const SponsorList = {
             Email:'test1@example.com',
             Designation: 'Student',
             Session: "2018-19",
-            ImageUrl: './assets/images/logo.jpg'
+            ImageUrl: './assets/images/sponsor.jpg'
         }
     ],
     PlainumSponsor: [
@@ -21,28 +21,28 @@ export const SponsorList = {
             Email:'test1@example.com',
             Designation: 'Student',
             Session: "2018-19",
-            ImageUrl: './assets/images/logo.jpg'
+            ImageUrl: './assets/images/sponsor.jpg'
         },
         {
             Name:'Rabbani Islam Refat',
             Email:'test1@example.com',
             Designation: 'Student',
             Session: "2018-19",
-            ImageUrl: './assets/images/logo.jpg'
+            ImageUrl: './assets/images/sponsor.jpg'
         },
         {
             Name:'Rabbani Islam Refat',
             Email:'test1@example.com',
             Designation: 'Student',
             Session: "2018-19",
-            ImageUrl: './assets/images/logo.jpg'
+            ImageUrl: './assets/images/sponsor.jpg'
         },
         {
             Name:'Rabbani Islam Refat',
             Email:'test1@example.com',
             Designation: 'Student',
             Session: "2018-19",
-            ImageUrl: './assets/images/logo.jpg'
+            ImageUrl: './assets/images/sponsor.jpg'
         }
     ],
     GoldSponsor: [
@@ -51,35 +51,35 @@ export const SponsorList = {
             Email:'test1@example.com',
             Designation: 'Student',
             Session: "2018-19",
-            ImageUrl: './assets/images/logo.jpg'
+            ImageUrl: './assets/images/sponsor.jpg'
         },
         {
             Name:'Rabbani Islam Refat',
             Email:'test1@example.com',
             Designation: 'Student',
             Session: "2018-19",
-            ImageUrl: './assets/images/logo.jpg'
+            ImageUrl: './assets/images/sponsor.jpg'
         },
         {
             Name:'Rabbani Islam Refat',
             Email:'test1@example.com',
             Designation: 'Student',
             Session: "2018-19",
-            ImageUrl: './assets/images/logo.jpg'
+            ImageUrl: './assets/images/sponsor.jpg'
         },
         {
             Name:'Rabbani Islam Refat',
             Email:'test1@example.com',
             Designation: 'Student',
             Session: "2018-19",
-            ImageUrl: './assets/images/logo.jpg'
+            ImageUrl: './assets/images/sponsor.jpg'
         },
         {
             Name:'Rabbani Islam Refat',
             Email:'test1@example.com',
             Designation: 'Student',
             Session: "2018-19",
-            ImageUrl: './assets/images/logo.jpg'
+            ImageUrl: './assets/images/sponsor.jpg'
         }
     ]
 }
