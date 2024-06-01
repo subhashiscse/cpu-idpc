@@ -9,35 +9,35 @@ export const OrganizingCommitteeMemberList: OrganizingCommittee[] = [
     {
         Name:'Rabbani Islam Refat',
         Email:'test1@example.com',
-        Designation: 'Student',
+        Designation: 'Professor',
         Session: "2018-19",
         ImageUrl: './assets/images/logo.jpg'
     },
     {
         Name:'Rabbani Islam Refat',
         Email:'test1@example.com',
-        Designation: 'Student',
+        Designation: 'Professor',
         Session: "2018-19",
         ImageUrl: './assets/images/logo.jpg'
     },
     {
         Name:'Rabbani Islam Refat',
         Email:'test1@example.com',
-        Designation: 'Student',
+        Designation: 'Professor',
         Session: "2018-19",
         ImageUrl: './assets/images/logo.jpg'
     },
     {
         Name:'Rabbani Islam Refat',
         Email:'test1@example.com',
-        Designation: 'Student',
+        Designation: 'Professor',
         Session: "2018-19",
         ImageUrl: './assets/images/logo.jpg'
     },
     {
         Name:'Rabbani Islam Refat',
         Email:'test1@example.com',
-        Designation: 'Student',
+        Designation: 'Professor',
         Session: "2018-19",
         ImageUrl: './assets/images/logo.jpg'
     }

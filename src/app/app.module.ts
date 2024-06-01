@@ -11,6 +11,11 @@ import { IdpcModule } from './idpc/idpc/idpc.module';
 import { SeminarModule } from './seminar/seminar/seminar.module';
 import { HttpClientModule } from '@angular/common/http';
 import { IdpcCommitteeModule } from './committee/idpc-committee/idpc-committee.module';
+import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
+import { MatTableModule } from '@angular/material/table';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatGridListModule } from '@angular/material/grid-list';
 
 @NgModule({
   declarations: [
@@ -26,7 +31,12 @@ import { IdpcCommitteeModule } from './committee/idpc-committee/idpc-committee.m
     IdpcModule,
     SeminarModule,
     HttpClientModule,
-    IdpcCommitteeModule
+    IdpcCommitteeModule,
+    MatCardModule,
+    MatButtonModule,
+    MatTableModule,
+    MatDividerModule,
+    MatGridListModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
