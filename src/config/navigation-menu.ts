@@ -3,18 +3,7 @@ export const NavigationMenuList = [
         Name:'HOME',
         FxFlex: 15,
         Url: '',
-        SubeMenuList:[
-            {
-                Name:'Home 1',
-                FxFlex: 15,
-                Url: '',
-            },
-            {
-                Name:'Home 2',
-                FxFlex: 15,
-                Url: '',
-            }
-        ]
+        SubeMenuList:[]
     },
     {
         Name:'IDPC',
@@ -22,26 +11,55 @@ export const NavigationMenuList = [
         Url: '/idpc',
         SubeMenuList:[
             {
-                Name:'Home 1',
+                Name:'About IDPC',
                 FxFlex: 15,
-                Url: '',
+                Url: '/idpc',
             },
             {
-                Name:'Home 2',
+                Name:'Registered Team List',
                 FxFlex: 15,
-                Url: '',
+                Url: '/registered-team-list',
+            },
+            {
+                Name:'Final Team List',
+                FxFlex: 15,
+                Url: '/final-team-list',
             }
         ]
     },
     {
         Name:'SEMINAR',
         FxFlex: 15,
-        Url: '/seminar'
+        Url: '/seminar',
+        SubeMenuList:[
+            {
+                Name:'Schedule',
+                FxFlex: 15,
+                Url: '',
+            }
+        ]
     },
     {
-        Name:'COMITTEE',
+        Name:'COMMITTEE',
         FxFlex: 15,
-        Url: '/comittee'
+        Url: '/committee',
+        SubeMenuList:[
+            {
+                Name:'Advisory Committee',
+                FxFlex: 15,
+                Url: '/advisory-committee',
+            },
+            {
+                Name:'Governing Committee',
+                FxFlex: 15,
+                Url: '/governing-committee',
+            },
+            {
+                Name:'Organizing Committee',
+                FxFlex: 15,
+                Url: '/organizing-committee',
+            }
+        ]
     },
     {
         Name:'GALLERY',

@@ -7,10 +7,10 @@ import { AppComponent } from './app.component';
 import { ImageSliderComponent } from './image-slider/component/image-slider/image-slider.component';
 import { FooterComponent } from './footer/footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MaterialModule } from './material/material/material.module';
 import { IdpcModule } from './idpc/idpc/idpc.module';
 import { SeminarModule } from './seminar/seminar/seminar.module';
 import { HttpClientModule } from '@angular/common/http';
+import { IdpcCommitteeModule } from './committee/idpc-committee/idpc-committee.module';
 
 @NgModule({
   declarations: [
@@ -23,10 +23,10 @@ import { HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     FlexLayoutModule,
     BrowserAnimationsModule,
-    MaterialModule,
     IdpcModule,
     SeminarModule,
-    HttpClientModule
+    HttpClientModule,
+    IdpcCommitteeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -32,47 +32,10 @@ html {
   
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-
-.menu {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    background-color: #333;
-    overflow: hidden;
+.text-center{
+    text-align: center !important;
 }
 
-.menu-item {
-    float: left;
-    position: relative;
-}
-
-.menu-item a, .menu-item {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-.submenu {
-    display: none;
-    position: absolute;
-    background-color: #78182c;
-    list-style-type: none;
-    padding: 0;
-    margin-top: 50px;
-    min-width: 160px;
-    z-index: 1;
-}
-
-.submenu-item {
-    padding: 12px 16px;
-}
-
-.submenu-item:hover {
-    background-color: #575757;
-}
-
-.menu-item:hover .submenu {
-    display: block !important;
+.circle-image{
+    border-radius: 50% !important;
 }

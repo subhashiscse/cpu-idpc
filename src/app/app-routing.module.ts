@@ -9,6 +9,10 @@ const routes: Routes = [
   {
     path: 'seminar',
     loadChildren: () => import('../app/seminar/seminar/seminar.module').then(m => m.SeminarModule),
+  },
+  {
+    path: 'committee',
+    loadChildren: () => import('../app/committee/idpc-committee/idpc-committee.module').then(m => m.IdpcCommitteeModule),
   }
 ];
 
