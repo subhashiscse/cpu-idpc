@@ -11,6 +11,7 @@ import { GoverningCommitteeComponent } from '../component/governing-committee/go
 import { OrganizingCommitteeComponent } from '../component/organizing-committee/organizing-committee.component';
 import {MatDividerModule} from '@angular/material/divider';
 import { MatGridListModule } from '@angular/material/grid-list';
+import {MatTabsModule} from '@angular/material/tabs';
 
 
 @NgModule({
@@ -24,6 +25,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
     MatTableModule,
     MatDividerModule,
     MatGridListModule,
+    MatTabsModule
   ]
 })
 export class IdpcCommitteeModule { }

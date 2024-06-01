@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { ExcelService } from 'src/shared/excel.service';
-import { ActivatedRoute, Router } from '@angular/router';
 export interface TimeSchedule {
   EventName: string;
   Position: number;
