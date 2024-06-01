@@ -10,6 +10,7 @@ import { AdvisoryCommitteeComponent } from '../component/advisory-committee/advi
 import { GoverningCommitteeComponent } from '../component/governing-committee/governing-committee.component';
 import { OrganizingCommitteeComponent } from '../component/organizing-committee/organizing-committee.component';
 import {MatDividerModule} from '@angular/material/divider';
+import { MatGridListModule } from '@angular/material/grid-list';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import {MatDividerModule} from '@angular/material/divider';
     MatButtonModule,
     FlexLayoutModule,
     MatTableModule,
-    MatDividerModule
+    MatDividerModule,
+    MatGridListModule,
   ]
 })
 export class IdpcCommitteeModule { }
