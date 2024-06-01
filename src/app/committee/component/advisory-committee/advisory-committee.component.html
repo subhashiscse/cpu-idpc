@@ -5,8 +5,8 @@
         <div class="my-16 mx-8 width-100" fxLayout="row wrap" fxLayoutGap="16px grid">
             <div *ngFor="let people of advisoryCommitteeList; let i = index" fxFlex="{{this.minFlex}}" fxFlex.md="{{this.minFlex}}" fxFlex.sm="50" fxFlex.xs="100">
                 <div fxLayoutAlign="center center">
-                    <mat-card class="dashboard__rightcontent__body__card cursor-pointer">
-                        <mat-card-title-group >
+                    <mat-card class="dashboard__rightcontent__body__card cursor-pointer card-width">
+                        <mat-card-title-group fxLayoutAlign="center center">
                           <img class="circle-image" mat-card-lg-image src="{{people.ImageUrl}}" >
                         </mat-card-title-group>
                         <mat-card-content class="text-center mt-20">

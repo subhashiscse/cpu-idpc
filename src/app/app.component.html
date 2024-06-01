@@ -337,9 +337,9 @@
           <div class="my-16 mx-8 width-100" fxLayout="row wrap" fxLayoutGap="16px grid">
               <div *ngFor="let sponsor of titleSponsorList; let i = index" fxFlex="100" fxFlex.md="100" fxFlex.sm="100" fxFlex.xs="100">
                   <div fxLayoutAlign="center center">
-                      <mat-card class="dashboard__rightcontent__body__card cursor-pointer">
+                      <mat-card class="dashboard__rightcontent__body__card cursor-pointer card-width">
                           <mat-card-title-group >
-                            <img class="circle-image" mat-card-lg-image src="{{sponsor.ImageUrl}}" >
+                            <img fxLayoutAlign="center center" class="circle-image" mat-card-lg-image src="{{sponsor.ImageUrl}}" >
                           </mat-card-title-group>
                           <mat-card-content class="text-center mt-20">
                             <h2 class="text-center">Sponsor {{i+1}}</h2>
@@ -354,9 +354,9 @@
           <div class="my-16 mx-8 width-100" fxLayout="row wrap" fxLayoutGap="16px grid">
               <div *ngFor="let sponsor of platinumSponsorList; let i = index" fxFlex="25" fxFlex.md="25" fxFlex.sm="50" fxFlex.xs="100">
                   <div fxLayoutAlign="center center">
-                      <mat-card class="dashboard__rightcontent__body__card cursor-pointer">
+                      <mat-card class="dashboard__rightcontent__body__card cursor-pointer card-width">
                           <mat-card-title-group >
-                            <img class="circle-image" mat-card-lg-image src="{{sponsor.ImageUrl}}" >
+                            <img fxLayoutAlign="center center" class="circle-image" mat-card-lg-image src="{{sponsor.ImageUrl}}" >
                           </mat-card-title-group>
                           <mat-card-content class="text-center mt-20">
                             <h2 class="text-center">Sponsor {{i+1}}</h2>
@@ -371,9 +371,9 @@
           <div class="my-16 mx-8 width-100" fxLayout="row wrap" fxLayoutGap="16px grid">
               <div *ngFor="let sponsor of goldSponsorList; let i = index" fxFlex="20" fxFlex.md="20" fxFlex.sm="50" fxFlex.xs="100">
                   <div fxLayoutAlign="center center">
-                      <mat-card class="dashboard__rightcontent__body__card cursor-pointer">
+                      <mat-card class="dashboard__rightcontent__body__card cursor-pointer card-width">
                           <mat-card-title-group >
-                            <img class="circle-image" mat-card-lg-image src="{{sponsor.ImageUrl}}" >
+                            <img fxLayoutAlign="center center" class="circle-image" mat-card-lg-image src="{{sponsor.ImageUrl}}" >
                           </mat-card-title-group>
                           <mat-card-content class="text-center mt-20">
                             <h2 class="text-center">Sponsor {{i+1}}</h2>

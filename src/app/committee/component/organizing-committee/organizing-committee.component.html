@@ -5,12 +5,12 @@
         <div class="my-16 mx-8 width-100" fxLayout="row wrap" fxLayoutGap="16px grid">
             <div *ngFor="let people of organizingCommitteeList; let i = index" fxFlex="20" fxFlex.md="20" fxFlex.sm="50" fxFlex.xs="100">
                 <div fxLayoutAlign="center center">
-                    <mat-card class="dashboard__rightcontent__body__card cursor-pointer">
-                        <mat-card-title-group >
+                    <mat-card class="dashboard__rightcontent__body__card cursor-pointer card-width">
+                        <mat-card-title-group fxLayoutAlign="center center">
                           <img class="circle-image" mat-card-lg-image src="{{people.ImageUrl}}" >
                         </mat-card-title-group>
                         <mat-card-content class="text-center mt-20">
-                          <h2 class="text-center">Member {{i+1}}</h2>
+                          <h2 class="text-center">{{people.Name}}</h2>
                           <h3 class="text-center">{{people.Designation}}</h3>
                           <p class="text-center">Session - {{people.Session}}</p>
                         </mat-card-content>
