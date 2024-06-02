@@ -9,57 +9,57 @@ export const NavigationMenuList = [
         Name:'IDPC',
         FxFlex: 15,
         Url: '/idpc',
-        SubeMenuList:[
-            {
-                Name:'About IDPC',
-                FxFlex: 15,
-                Url: '/idpc',
-            },
-            {
-                Name:'Registered Team List',
-                FxFlex: 15,
-                Url: '/registered-team-list',
-            },
-            {
-                Name:'Final Team List',
-                FxFlex: 15,
-                Url: '/final-team-list',
-            }
-        ]
+        // SubeMenuList:[
+        //     {
+        //         Name:'About IDPC',
+        //         FxFlex: 15,
+        //         Url: '/idpc',
+        //     },
+        //     {
+        //         Name:'Registered Team List',
+        //         FxFlex: 15,
+        //         Url: '/registered-team-list',
+        //     },
+        //     {
+        //         Name:'Final Team List',
+        //         FxFlex: 15,
+        //         Url: '/final-team-list',
+        //     }
+        // ]
     },
     {
         Name:'SEMINAR',
         FxFlex: 15,
         Url: '/seminar',
-        SubeMenuList:[
-            {
-                Name:'Schedule',
-                FxFlex: 15,
-                Url: '',
-            }
-        ]
+        // SubeMenuList:[
+        //     {
+        //         Name:'Schedule',
+        //         FxFlex: 15,
+        //         Url: '',
+        //     }
+        // ]
     },
     {
         Name:'COMMITTEE',
         FxFlex: 15,
         Url: '/committee',
-        SubeMenuList:[
-            {
-                Name:'Advisory Committee',
-                FxFlex: 15,
-                Url: '/advisory-committee',
-            },
-            {
-                Name:'Governing Committee',
-                FxFlex: 15,
-                Url: '/governing-committee',
-            },
-            {
-                Name:'Organizing Committee',
-                FxFlex: 15,
-                Url: '/organizing-committee',
-            }
-        ]
+        // SubeMenuList:[
+        //     {
+        //         Name:'Advisory Committee',
+        //         FxFlex: 15,
+        //         Url: '/advisory-committee',
+        //     },
+        //     {
+        //         Name:'Governing Committee',
+        //         FxFlex: 15,
+        //         Url: '/governing-committee',
+        //     },
+        //     {
+        //         Name:'Organizing Committee',
+        //         FxFlex: 15,
+        //         Url: '/organizing-committee',
+        //     }
+        // ]
     },
     {
         Name:'GALLERY',

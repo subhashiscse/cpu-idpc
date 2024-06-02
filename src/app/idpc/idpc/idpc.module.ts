@@ -7,10 +7,17 @@ import { MatButtonModule } from '@angular/material/button';
 import { AboutIdpcComponent } from '../component/about-idpc/about-idpc.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import {MatTableModule} from '@angular/material/table';
+import { MatTabsModule } from '@angular/material/tabs';
+import { RegisteredTeamListComponent } from '../component/registered-team-list/registered-team-list.component';
+import { FinalTeamListComponent } from '../component/final-team-list/final-team-list.component';
+import { IdpcScheduleComponent } from '../component/idpc-schedule/idpc-schedule.component';
 
 @NgModule({
   declarations: [
-    AboutIdpcComponent
+    AboutIdpcComponent,
+    RegisteredTeamListComponent,
+    FinalTeamListComponent,
+    IdpcScheduleComponent
   ],
   imports: [
     CommonModule,
@@ -18,7 +25,8 @@ import {MatTableModule} from '@angular/material/table';
     MatCardModule,
     MatButtonModule,
     FlexLayoutModule,
-    MatTableModule
+    MatTableModule,
+    MatTabsModule
   ]
 })
 export class IdpcModule { }

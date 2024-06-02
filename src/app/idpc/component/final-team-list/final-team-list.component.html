@@ -1,1 +1,24 @@
-<h1>Working On it</h1>
+<div style="width: 90%; height: 100%;margin-top:20px;margin-left: 5%;">
+    <mat-card fxLayout="column" fxFlex="100" class="example-card">
+        <h2>About IDPC</h2>
+        <mat-tab-group fxLayout="column" fxLayoutAlign="center center" class="mb-12" [(selectedIndex)]="selectedIndex" (selectedTabChange)="onTabClick($event)">
+            <mat-tab label="About"></mat-tab>
+            <mat-tab label="Schedule"></mat-tab>
+            <mat-tab label="Registered Team List"></mat-tab>
+            <mat-tab label="Final Team List"></mat-tab>
+        </mat-tab-group>
+        <div fxLayout="row" fxLayoutAlign="start center" fxFlex="100">
+            <div fxFlex="30">
+                <img
+                    width="100%"
+                    height="380px"
+                    alt="Angular Logo"
+                    src="./assets/images/idpc-event.jpg"
+                />
+            </div>
+            <div fxLayout="column" fxFlex="70" fxLayoutGap="20px">
+                <h2>Important Date & Time</h2>
+            </div>
+        </div>
+    </mat-card>
+</div>

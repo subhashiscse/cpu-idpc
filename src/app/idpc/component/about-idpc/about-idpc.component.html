@@ -1,6 +1,12 @@
-<div style="width: 90%; height: 520px;margin-top:20px;margin-left: 5%;">
+<div style="width: 90%; height: 100%;margin-top:20px;margin-left: 5%;">
     <mat-card fxLayout="column" fxFlex="100" class="example-card">
         <h2>About IDPC</h2>
+        <mat-tab-group  fxLayout="column" fxLayoutAlign="center center" class="mb-12" [(selectedIndex)]="selectedIndex" (selectedTabChange)="onTabClick($event)">
+          <mat-tab label="About"></mat-tab>
+          <mat-tab label="Schedule"></mat-tab>
+          <mat-tab label="Registered Team List"></mat-tab>
+          <mat-tab label="Final Team List"></mat-tab>
+        </mat-tab-group>
         <div fxLayout="row" fxLayoutAlign="start center" fxFlex="100">
             <div fxFlex="30">
                 <img
@@ -10,44 +16,6 @@
                     src="./assets/images/idpc-event.jpg"
                 />
             </div>
-            <div fxLayout="column" fxFlex="70" fxLayoutGap="20px">
-                <h2>Important Date & Time</h2>
-                <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
-                    <ng-container matColumnDef="Position">
-                      <th mat-header-cell *matHeaderCellDef> No. </th>
-                      <td mat-cell *matCellDef="let element"> {{element.Position}} </td>
-                    </ng-container>
-                    <ng-container matColumnDef="EventName">
-                      <th mat-header-cell *matHeaderCellDef> Event Name </th>
-                      <td mat-cell *matCellDef="let element"> {{element.EventName}} </td>
-                    </ng-container>
-                  
-                    <ng-container matColumnDef="StartTime">
-                      <th mat-header-cell *matHeaderCellDef> Start Time </th>
-                      <td mat-cell *matCellDef="let element"> {{element.StartTime}} </td>
-                    </ng-container>
-                    <ng-container matColumnDef="EndTime">
-                      <th mat-header-cell *matHeaderCellDef> End Time </th>
-                      <td mat-cell *matCellDef="let element"> {{element.EndTime}} </td>
-                    </ng-container>
-                    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-                    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-                </table>                  
-            </div>
-        </div>
-        <div fxFlex="row" fxFlex="100">
-          <button mat-raised-button color="primary"
-                  class="submit-button legacy-bold text-uppercase"  aria-label="REGISTRATION_LINK" (click)="navigateToRegistrationLink()">
-              Registration Link
-          </button>
-          <button mat-raised-button color="primary"
-                class="submit-button legacy-bold text-uppercase ml-12"  aria-label="REGISTERED_TEAM_LIST" (click)="navigateToRegisteredTeamList()">
-            Registered Team List
-          </button>
-          <button mat-raised-button color="primary"
-                class="submit-button legacy-bold text-uppercase ml-12"  aria-label="FINAL_TEAM_LIST" (click)="navigateToFinalTeamList()">
-            Final Team List
-          </button>
         </div>
     </mat-card>
 </div>
