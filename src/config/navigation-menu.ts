@@ -3,12 +3,14 @@ export const NavigationMenuList = [
         Name:'HOME',
         FxFlex: 15,
         Url: '',
-        SubeMenuList:[]
+        SubeMenuList:[],
+        Top: 0,
     },
     {
         Name:'IDPC',
         FxFlex: 15,
         Url: '/idpc',
+        Top: 520
         // SubeMenuList:[
         //     {
         //         Name:'About IDPC',
@@ -31,6 +33,7 @@ export const NavigationMenuList = [
         Name:'SEMINAR',
         FxFlex: 15,
         Url: '/seminar',
+        Top: 520
         // SubeMenuList:[
         //     {
         //         Name:'Schedule',
@@ -43,6 +46,7 @@ export const NavigationMenuList = [
         Name:'COMMITTEE',
         FxFlex: 15,
         Url: '/committee',
+        Top: 500
         // SubeMenuList:[
         //     {
         //         Name:'Advisory Committee',
@@ -62,13 +66,21 @@ export const NavigationMenuList = [
         // ]
     },
     {
+        Name:'SPONSORS',
+        FxFlex: 15,
+        Url: '/',
+        Top: 1080
+    },
+    {
         Name:'GALLERY',
         FxFlex: 15,
-        Url: '/gallery'
+        Url: '/gallery',
+        Top: 100
     },
     {
         Name:'CONTACT US',
         FxFlex: 15,
-        Url: '/contactus'
+        Url: '/contactus',
+        Top: 100
     }
 ]

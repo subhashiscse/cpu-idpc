@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { SponsorList } from 'src/config/sponsor-list';
 import { NavigationMenuList } from '.././config/navigation-menu';
 import { SlideInterface } from './image-slider/types/slider.interface';
@@ -21,4 +22,21 @@ export class AppComponent {
   platinumSponsorList: any = SponsorList.PlainumSponsor;
   goldSponsorList: any = SponsorList.GoldSponsor;
   navigationList :any = NavigationMenuList;
+  topScoll: number = 0;
+  constructor(
+    private router: Router) {
+
+  }
+
+  scrollToTop(navmenu:any): void {
+    debugger;
+    this.topScoll = navmenu.Top;
+    window.scrollTo({ top: this.topScoll, behavior: 'smooth' });
+    this.router.navigate([navmenu.Url]);
+  }
+  
+  scrollToBottom(): void {
+    window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+  }
+  
 }

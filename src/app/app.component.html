@@ -315,7 +315,7 @@
     </div>
     <div fxLayout="row" fxLayoutAlign="center" fxFlex="100">
       <div class="menu-item" *ngFor="let navMenu of navigationList" fxFlex="{{navMenu.FxFlex}}">
-        <div style="cursor: pointer;" routerLink="{{navMenu.Url}}">{{navMenu.Name}}</div>
+        <div style="cursor: pointer;" (click)="scrollToTop(navMenu)">{{navMenu.Name}}</div>
         <div *ngIf="navMenu.SubeMenuList"></div>
         <ul class="submenu">
           <div *ngFor="let submenu of navMenu.SubeMenuList">
