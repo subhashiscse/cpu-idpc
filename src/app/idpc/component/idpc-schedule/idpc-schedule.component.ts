@@ -26,7 +26,7 @@ export class IdpcScheduleComponent implements OnInit {
   ngOnInit(): void {
     this.excelService.fetchExcelFile(this.excelUrl).subscribe(
       data => {
-        this.excelData = this.excelService.readExcelFile(data);
+        this.excelData = this.excelService.readExcelFile(data,0);
         this.generateDisplayedColumns();
         this.generateDisplayedData(2);
         this.dataSource = this.eventDetailsData;

@@ -14,9 +14,10 @@ export class ExcelService {
     return this.http.get(url, { responseType: 'arraybuffer' });
   }
 
-  readExcelFile(data: ArrayBuffer): any[] {
+  readExcelFile(data: ArrayBuffer,sheetIndex:number): any[] {
+    debugger;
     const workbook: XLSX.WorkBook = XLSX.read(data, { type: 'array' });
-    const sheetName: string = workbook.SheetNames[0];
+    const sheetName: string = workbook.SheetNames[sheetIndex];
     const worksheet: XLSX.WorkSheet = workbook.Sheets[sheetName];
     return XLSX.utils.sheet_to_json(worksheet, { header: 1 });
   }
