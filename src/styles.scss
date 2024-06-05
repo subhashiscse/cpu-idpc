@@ -55,3 +55,20 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .card-width{
     min-width: 80% !important;
 }
+.contact-info-section{
+    @media screen and (min-width: 1399px) {
+        width: 50% !important;
+    }
+    @media (min-width: 1200px) and (max-width: 1399px) {
+        width: 60% !important;
+    }
+    @media (min-width: 992px) and (max-width: 1199px) {
+        width: 80% !important;
+    }
+    @media (min-width: 768px) and (max-width: 991px) {
+        width: 80% !important;
+    }
+    @media (min-width: 575px) and (max-width: 767px) {
+        width: 100% !important;
+    }
+}

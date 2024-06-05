@@ -7,8 +7,8 @@
         <mat-tab label="Organizing  Committee"></mat-tab>
       </mat-tab-group>
       <h1 class="font-weight-700">Advisory Committee</h1>
-      <div fxLayout="column" fxLayoutGap="24px" >
-        <div class="my-16 mx-8 width-100" fxLayout="row wrap" fxLayoutGap="16px grid">
+      <div style="width:90%" fxFlex="100" fxLayout="column" fxLayoutGap="24px" >
+        <div fxFlex="100" class="my-16 mx-8 width-100" fxLayout="row wrap" fxLayoutGap="16px grid">
             <div *ngFor="let people of advisoryCommitteeList; let i = index" fxFlex="{{this.minFlex}}" fxFlex.md="{{this.minFlex}}" fxFlex.sm="50" fxFlex.xs="100">
                 <div fxLayoutAlign="center center">
                     <mat-card class="dashboard__rightcontent__body__card cursor-pointer card-width">
