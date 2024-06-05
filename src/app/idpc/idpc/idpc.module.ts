@@ -11,13 +11,22 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { RegisteredTeamListComponent } from '../component/registered-team-list/registered-team-list.component';
 import { FinalTeamListComponent } from '../component/final-team-list/final-team-list.component';
 import { IdpcScheduleComponent } from '../component/idpc-schedule/idpc-schedule.component';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
+import{
+  FormsModule,
+  ReactiveFormsModule,
+} from '@angular/forms';
+import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { ContestRulesComponent } from '../component/contest-rules/contest-rules.component';
 
 @NgModule({
   declarations: [
     AboutIdpcComponent,
     RegisteredTeamListComponent,
     FinalTeamListComponent,
-    IdpcScheduleComponent
+    IdpcScheduleComponent,
+    ContestRulesComponent
   ],
   imports: [
     CommonModule,
@@ -26,7 +35,12 @@ import { IdpcScheduleComponent } from '../component/idpc-schedule/idpc-schedule.
     MatButtonModule,
     FlexLayoutModule,
     MatTableModule,
-    MatTabsModule
+    MatTabsModule,
+    MatProgressBarModule,
+    FormsModule, 
+    MatFormFieldModule, 
+    MatInputModule, 
+    ReactiveFormsModule
   ]
 })
 export class IdpcModule { }

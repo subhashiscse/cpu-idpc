@@ -15,7 +15,6 @@ export class ExcelService {
   }
 
   readExcelFile(data: ArrayBuffer,sheetIndex:number): any[] {
-    debugger;
     const workbook: XLSX.WorkBook = XLSX.read(data, { type: 'array' });
     const sheetName: string = workbook.SheetNames[sheetIndex];
     const worksheet: XLSX.WorkSheet = workbook.Sheets[sheetName];

@@ -13,8 +13,9 @@ export class IdpcScheduleComponent implements OnInit {
   eventDetailsData:any = [];
   dataSource:any = []
   excelData: any[] = [];
-  selectedIndex:number = 1;
+  selectedIndex:number = 2;
   idpcTabconfig = IDPCTabConfigList;
+  isLoading: boolean = true;
   excelUrl: string = 'https://docs.google.com/spreadsheets/d/1vtkTMVeys3uBJ-CSF0zvPpErBXd1kO59OD6sf7Bq9ok/edit?usp=sharing'; // Replace with your URL
 
   constructor(
@@ -30,6 +31,7 @@ export class IdpcScheduleComponent implements OnInit {
         this.generateDisplayedColumns();
         this.generateDisplayedData(2);
         this.dataSource = this.eventDetailsData;
+        this.isLoading = false;
       },
       error => {
         console.error('Error fetching the Excel file', error);

@@ -6,6 +6,9 @@ export const IDPCTabConfigList = [
         Url:'',
     },
     {
+        Url:'contest-rules',
+    },
+    {
         Url:'schedule',
     },
     {

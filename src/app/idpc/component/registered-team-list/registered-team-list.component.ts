@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl } from '@angular/forms';
 import { Router } from '@angular/router';
+import { debounceTime, distinctUntilChanged } from 'rxjs';
 import { IDPCTabConfigList } from 'src/config/idpc-tab-config';
 import { ExcelService } from 'src/shared/excel.service';
 
@@ -14,21 +16,31 @@ export class RegisteredTeamListComponent implements OnInit {
   dataSource:any = []
   excelData: any[] = [];
   idpcTabconfig = IDPCTabConfigList;
-  selectedIndex:number = 2;
+  selectedIndex:number = 3;
+  isLoading: boolean = true;
   excelUrl: string = 'https://docs.google.com/spreadsheets/d/12zWolSx1nM0o7KLO_khBWmDCHxU9Y0VRDH0okFbEcOc/edit?usp=sharing';
+  searchControl = new FormControl('');
   constructor(
     private router: Router,
     private excelService: ExcelService) { 
+      this.searchControl.valueChanges
+      .pipe(
+        debounceTime(300),
+        distinctUntilChanged()
+      )
+      .subscribe(searchTerm => {
+        this.dataSource = this.filterByTeamName(this.teamListDetailsData, searchTerm);
+      });
   }
 
   ngOnInit(): void {
     this.excelService.fetchExcelFile(this.excelUrl).subscribe(
       data => {
-        debugger;
         this.excelData = this.excelService.readExcelFile(data,0);
         this.generateDisplayedColumns();
         this.generateDisplayedData(2);
         this.dataSource = this.teamListDetailsData;
+        this.isLoading = false;
       },
       error => {
         console.error('Error fetching the Excel file', error);
@@ -62,5 +74,8 @@ export class RegisteredTeamListComponent implements OnInit {
     this.selectedIndex = e.index;
     let url = this.idpcTabconfig[this.selectedIndex].Url;
     this.router.navigateByUrl('/'+url);
+  }
+  filterByTeamName(data:any, searchValue:string) {
+    return data.filter((team:any) => team.TeamName.toLowerCase().includes(searchValue.toLowerCase()));
   }
 }
