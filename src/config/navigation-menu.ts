@@ -81,6 +81,6 @@ export const NavigationMenuList = [
         Name:'CONTACT US',
         FxFlex: 15,
         Url: '/contact',
-        Top: 1500
+        Top: 1800
     }
 ]
