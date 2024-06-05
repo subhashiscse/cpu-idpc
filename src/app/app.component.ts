@@ -29,7 +29,6 @@ export class AppComponent {
   }
 
   scrollToTop(navmenu:any): void {
-    debugger;
     this.topScoll = navmenu.Top;
     window.scrollTo({ top: this.topScoll, behavior: 'smooth' });
     this.router.navigate([navmenu.Url]);

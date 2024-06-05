@@ -75,12 +75,12 @@ export const NavigationMenuList = [
         Name:'GALLERY',
         FxFlex: 15,
         Url: '/gallery',
-        Top: 100
+        Top: 500
     },
     {
         Name:'CONTACT US',
         FxFlex: 15,
-        Url: '/contactus',
-        Top: 100
+        Url: '/contact',
+        Top: 1500
     }
 ]

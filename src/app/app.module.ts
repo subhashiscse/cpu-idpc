@@ -16,12 +16,17 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatTableModule } from '@angular/material/table';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { ContactInfoComponent } from './contactus/contact-info/contact-info.component';
+import {MatIconModule} from '@angular/material/icon';
+import { ReactiveFormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     ImageSliderComponent,
-    FooterComponent
+    FooterComponent,
+    ContactInfoComponent
   ],
   imports: [
     BrowserModule,
@@ -37,6 +42,8 @@ import { MatGridListModule } from '@angular/material/grid-list';
     MatTableModule,
     MatDividerModule,
     MatGridListModule,
+    MatIconModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
