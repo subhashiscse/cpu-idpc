@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { SeminarTabConfigList } from 'src/config/tab-config';
 export interface TimeSchedule {
   EventName: string;
   Position: number;
@@ -20,11 +22,19 @@ const ELEMENT_DATA: TimeSchedule[] = [
   styleUrls: ['./about-seminar.component.scss']
 })
 export class AboutSeminarComponent implements OnInit {
+  selectedIndex: number = 0;
   displayedColumns: string[] = ['Position', 'EventName', 'StartTime', 'EndTime'];
   dataSource = ELEMENT_DATA;
-  constructor() { }
+  isLoading: boolean = false;
+  tabconfig = SeminarTabConfigList
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
+  }
+  onTabClick(e:any){
+    this.selectedIndex = e.index;
+    let url = this.tabconfig[this.selectedIndex].Url;
+    this.router.navigateByUrl('/'+url);
   }
 
 }

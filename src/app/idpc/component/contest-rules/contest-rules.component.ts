@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ContestRulesList } from 'src/config/contest-rules';
-import { IDPCTabConfigList } from 'src/config/idpc-tab-config';
+import { IDPCTabConfigList } from 'src/config/tab-config';
 
 @Component({
   selector: 'app-contest-rules',

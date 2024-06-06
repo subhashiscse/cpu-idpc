@@ -29,21 +29,20 @@
                 </form>
                 <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
                     <ng-container matColumnDef="Position">
-                      <th mat-header-cell *matHeaderCellDef> No. </th>
-                      <td mat-cell *matCellDef="let element"> {{element.Position}} </td>
+                        <th mat-header-cell *matHeaderCellDef> No. </th>
+                        <td mat-cell *matCellDef="let element; let i = index"> {{i + 1}} </td>
                     </ng-container>
                     <ng-container matColumnDef="TeamName">
-                      <th mat-header-cell *matHeaderCellDef> Team Name </th>
-                      <td mat-cell *matCellDef="let element"> {{element.TeamName}} </td>
+                        <th mat-header-cell *matHeaderCellDef> Team Name </th>
+                        <td mat-cell *matCellDef="let element"> {{element.TeamName}} </td>
                     </ng-container>
-                  
                     <ng-container matColumnDef="Member1">
-                      <th mat-header-cell *matHeaderCellDef> Start Time </th>
-                      <td mat-cell *matCellDef="let element"> {{element.Member1}} </td>
+                        <th mat-header-cell *matHeaderCellDef> Start Time </th>
+                        <td mat-cell *matCellDef="let element"> {{element.Member1}} </td>
                     </ng-container>
                     <ng-container matColumnDef="Session1">
-                      <th mat-header-cell *matHeaderCellDef> End Time </th>
-                      <td mat-cell *matCellDef="let element"> {{element.Session1}} </td>
+                        <th mat-header-cell *matHeaderCellDef> End Time </th>
+                        <td mat-cell *matCellDef="let element"> {{element.Session1}} </td>
                     </ng-container>
                     <ng-container matColumnDef="Member2">
                         <th mat-header-cell *matHeaderCellDef> Start Time </th>

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { IDPCTabConfigList } from 'src/config/idpc-tab-config';
+import { IDPCTabConfigList } from 'src/config/tab-config';
 import { ExcelService } from 'src/shared/excel.service';
 
 @Component({

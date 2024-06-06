@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { Router } from '@angular/router';
 import { debounceTime, distinctUntilChanged } from 'rxjs';
-import { IDPCTabConfigList } from 'src/config/idpc-tab-config';
+import { IDPCTabConfigList } from 'src/config/tab-config';
 import { ExcelService } from 'src/shared/excel.service';
 
 @Component({

@@ -7,11 +7,15 @@ import { MatButtonModule } from '@angular/material/button';
 import { AboutSeminarComponent } from '../component/about-seminar/about-seminar.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatTableModule } from '@angular/material/table';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { SeminarSpeakerComponent } from '../component/seminar-speaker/seminar-speaker.component';
 
 
 @NgModule({
   declarations: [
-    AboutSeminarComponent
+    AboutSeminarComponent,
+    SeminarSpeakerComponent
   ],
   imports: [
     CommonModule,
@@ -19,7 +23,9 @@ import { MatTableModule } from '@angular/material/table';
     MatCardModule,
     MatButtonModule,
     FlexLayoutModule,
-    MatTableModule
+    MatTableModule,
+    MatTabsModule,
+    MatProgressBarModule,
   ]
 })
 export class SeminarModule { }

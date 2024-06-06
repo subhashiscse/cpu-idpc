@@ -1,6 +1,10 @@
-<div style="width: 90%; height: 520px;margin-top:20px;margin-left: 5%;">
+<div style="width: 90%; max-height: 100%;margin-top:20px;margin-left: 5%;">
     <mat-card fxLayout="column" fxFlex="100" class="example-card">
         <h2>About Seminar</h2>
+        <mat-tab-group fxLayout="column" fxLayoutAlign="center center" class="mb-12" [(selectedIndex)]="selectedIndex" (selectedTabChange)="onTabClick($event)">
+          <mat-tab label="Schedule"></mat-tab>
+          <mat-tab label="Seminar Speaker"></mat-tab>
+        </mat-tab-group>
         <div fxLayout="row" fxLayoutAlign="start center" fxFlex="100">
             <div fxFlex="30">
                 <img

@@ -24,7 +24,7 @@ const routes: Routes = [
     component: FinalTeamListComponent
   },
   {
-    path:'schedule',
+    path:'program-schedule',
     component: IdpcScheduleComponent
   }
 ];
