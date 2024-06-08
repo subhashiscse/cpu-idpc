@@ -13,6 +13,10 @@ const routes: Routes = [
   {
     path: 'committee',
     loadChildren: () => import('../app/committee/idpc-committee/idpc-committee.module').then(m => m.IdpcCommitteeModule),
+  },
+  {
+    path: 'gallery',
+    loadChildren: () => import('../app/gallery/gallery/gallery.module').then(m => m.GalleryModule),
   }
 ];
 

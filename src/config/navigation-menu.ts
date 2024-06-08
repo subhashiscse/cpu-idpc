@@ -42,11 +42,11 @@ export const NavigationMenuList = [
         //     }
         // ]
     },
-    {
-        Name:'COMMITTEE',
-        FxFlex: 15,
-        Url: '/committee',
-        Top: 500
+    // {
+        // Name:'COMMITTEE',
+        // FxFlex: 15,
+        // Url: '/committee',
+        // Top: 500
         // SubeMenuList:[
         //     {
         //         Name:'Advisory Committee',
@@ -64,7 +64,7 @@ export const NavigationMenuList = [
         //         Url: '/organizing-committee',
         //     }
         // ]
-    },
+    // },
     {
         Name:'SPONSORS',
         FxFlex: 15,
@@ -81,6 +81,6 @@ export const NavigationMenuList = [
         Name:'CONTACT US',
         FxFlex: 15,
         Url: '/contact',
-        Top: 1800
+        Top: 2000
     }
 ]

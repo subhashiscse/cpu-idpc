@@ -1,8 +1,11 @@
 import { Component } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
 import { SponsorList } from 'src/config/sponsor-list';
 import { NavigationMenuList } from '.././config/navigation-menu';
+import { AppDialogComponent } from './dialog-modal/app-dialog/app-dialog.component';
 import { SlideInterface } from './image-slider/types/slider.interface';
+import { DataService } from './shared/services/data-service.service';
 
 @Component({
   selector: 'app-root',
@@ -24,7 +27,9 @@ export class AppComponent {
   navigationList :any = NavigationMenuList;
   topScoll: number = 0;
   constructor(
-    private router: Router) {
+    private router: Router,
+    public dialog: MatDialog,
+    private dataService:DataService) {
 
   }
 
@@ -37,5 +42,17 @@ export class AppComponent {
   scrollToBottom(): void {
     window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
   }
-  
+  openDialog(type:number, index:number): void {
+    let aboutData:string ='';
+    if(type == 1){
+      aboutData = this.titleSponsorList[index].About;
+    } else if(type == 2){
+      aboutData = this.platinumSponsorList[index].About;
+    } else if(type == 3){
+      aboutData = this.goldSponsorList[index].About;
+    }
+    console.log(aboutData);
+    this.dataService.setAboutData(aboutData);
+    this.dialog.open(AppDialogComponent);
+  }
 }

@@ -343,6 +343,7 @@
                           </mat-card-title-group>
                           <mat-card-content class="text-center mt-20">
                             <h2 class="text-center">Sponsor {{i+1}}</h2>
+                            <button mat-button (click)="openDialog(1,i)">About</button>
                           </mat-card-content>
                       </mat-card>
                   </div>
@@ -352,7 +353,7 @@
         <h2 class="font-weight-600">Platinum Sponsor</h2>
         <div fxLayout="column" fxLayoutGap="24px" >
           <div class="my-16 mx-8 width-100" fxLayout="row wrap" fxLayoutGap="16px grid">
-              <div *ngFor="let sponsor of platinumSponsorList; let i = index" fxFlex="25" fxFlex.md="25" fxFlex.sm="50" fxFlex.xs="100">
+              <div *ngFor="let sponsor of platinumSponsorList; let i = index" fxFlex="50" fxFlex.md="50" fxFlex.sm="50" fxFlex.xs="100">
                   <div fxLayoutAlign="center center">
                       <mat-card class="dashboard__rightcontent__body__card cursor-pointer card-width">
                           <mat-card-title-group >
@@ -360,6 +361,7 @@
                           </mat-card-title-group>
                           <mat-card-content class="text-center mt-20">
                             <h2 class="text-center">Sponsor {{i+1}}</h2>
+                            <button mat-button (click)="openDialog(2,i)">About</button>
                           </mat-card-content>
                       </mat-card>
                   </div>
@@ -369,7 +371,7 @@
         <h2 class="font-weight-600">Gold Sponsor</h2>
         <div fxLayout="column" fxLayoutGap="24px" >
           <div class="my-16 mx-8 width-100" fxLayout="row wrap" fxLayoutGap="16px grid">
-              <div *ngFor="let sponsor of goldSponsorList; let i = index" fxFlex="20" fxFlex.md="20" fxFlex.sm="50" fxFlex.xs="100">
+              <div *ngFor="let sponsor of goldSponsorList; let i = index" fxFlex="100" fxFlex.md="100" fxFlex.sm="100" fxFlex.xs="100">
                   <div fxLayoutAlign="center center">
                       <mat-card class="dashboard__rightcontent__body__card cursor-pointer card-width">
                           <mat-card-title-group >
@@ -377,6 +379,7 @@
                           </mat-card-title-group>
                           <mat-card-content class="text-center mt-20">
                             <h2 class="text-center">Sponsor {{i+1}}</h2>
+                            <button mat-button (click)="openDialog(3,i)">About</button>
                           </mat-card-content>
                       </mat-card>
                   </div>

@@ -1,85 +1,38 @@
 export interface Sponsor{
     Name: string;
     Email: string;
-    Designation: string;
-    Session: string;
     ImageUrl: string;
+    About: string
 }
 export const SponsorList = {
     TitleSponsor: [
         {
-            Name:'Rabbani Islam Refat',
+            Name:'Enlight Solutions',
             Email:'test1@example.com',
-            Designation: 'Student',
-            Session: "2018-19",
-            ImageUrl: './assets/images/sponsor.jpg'
+            ImageUrl: './assets/images/sponsor.jpg',
+            About: 'Enlight Solutions Title Sponsor'
         }
     ],
     PlainumSponsor: [
         {
-            Name:'Rabbani Islam Refat',
+            Name:'Platinum Sposor 1',
             Email:'test1@example.com',
-            Designation: 'Student',
-            Session: "2018-19",
-            ImageUrl: './assets/images/sponsor.jpg'
+            ImageUrl: './assets/images/sponsor.jpg',
+            About: 'Platinum Sponsor 2 Platinum Sponsor'
         },
         {
-            Name:'Rabbani Islam Refat',
+            Name:'Platinum Sponsor 2',
             Email:'test1@example.com',
-            Designation: 'Student',
-            Session: "2018-19",
-            ImageUrl: './assets/images/sponsor.jpg'
-        },
-        {
-            Name:'Rabbani Islam Refat',
-            Email:'test1@example.com',
-            Designation: 'Student',
-            Session: "2018-19",
-            ImageUrl: './assets/images/sponsor.jpg'
-        },
-        {
-            Name:'Rabbani Islam Refat',
-            Email:'test1@example.com',
-            Designation: 'Student',
-            Session: "2018-19",
-            ImageUrl: './assets/images/sponsor.jpg'
+            ImageUrl: './assets/images/sponsor.jpg',
+            About: 'Platinum Sponsor 2 Platinum Sponsor'
         }
     ],
     GoldSponsor: [
         {
-            Name:'Rabbani Islam Refat',
+            Name:'Gold Sponsor 1',
             Email:'test1@example.com',
-            Designation: 'Student',
-            Session: "2018-19",
-            ImageUrl: './assets/images/sponsor.jpg'
-        },
-        {
-            Name:'Rabbani Islam Refat',
-            Email:'test1@example.com',
-            Designation: 'Student',
-            Session: "2018-19",
-            ImageUrl: './assets/images/sponsor.jpg'
-        },
-        {
-            Name:'Rabbani Islam Refat',
-            Email:'test1@example.com',
-            Designation: 'Student',
-            Session: "2018-19",
-            ImageUrl: './assets/images/sponsor.jpg'
-        },
-        {
-            Name:'Rabbani Islam Refat',
-            Email:'test1@example.com',
-            Designation: 'Student',
-            Session: "2018-19",
-            ImageUrl: './assets/images/sponsor.jpg'
-        },
-        {
-            Name:'Rabbani Islam Refat',
-            Email:'test1@example.com',
-            Designation: 'Student',
-            Session: "2018-19",
-            ImageUrl: './assets/images/sponsor.jpg'
+            ImageUrl: './assets/images/sponsor.jpg',
+            About: 'Gold Sponsor 1 Gold Sponsor'
         }
     ]
 }

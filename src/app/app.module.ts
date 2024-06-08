@@ -19,6 +19,9 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { ContactInfoComponent } from './contactus/contact-info/contact-info.component';
 import {MatIconModule} from '@angular/material/icon';
 import { ReactiveFormsModule } from '@angular/forms';
+import {MatDialogModule} from '@angular/material/dialog';
+import { AppDialogComponent } from './dialog-modal/app-dialog/app-dialog.component';
+
 
 
 @NgModule({
@@ -26,7 +29,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     AppComponent,
     ImageSliderComponent,
     FooterComponent,
-    ContactInfoComponent
+    ContactInfoComponent,
+    AppDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -43,7 +47,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     MatDividerModule,
     MatGridListModule,
     MatIconModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
