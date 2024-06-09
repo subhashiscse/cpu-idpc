@@ -19,6 +19,7 @@ import{
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { ContestRulesComponent } from '../component/contest-rules/contest-rules.component';
+import { MatPaginatorModule } from '@angular/material/paginator';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { ContestRulesComponent } from '../component/contest-rules/contest-rules.
     FormsModule, 
     MatFormFieldModule, 
     MatInputModule, 
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatPaginatorModule
   ]
 })
 export class IdpcModule { }

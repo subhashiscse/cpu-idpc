@@ -1,9 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { Router } from '@angular/router';
 import { IDPCTabConfigList } from 'src/config/tab-config';
 import { ExcelService } from 'src/shared/excel.service';
 import { debounceTime, distinctUntilChanged, takeUntil } from 'rxjs/operators';
+import { MatPaginator } from '@angular/material/paginator';
 
 
 @Component({
@@ -14,7 +15,8 @@ import { debounceTime, distinctUntilChanged, takeUntil } from 'rxjs/operators';
 export class FinalTeamListComponent implements OnInit {
   displayedColumns: string[] = [];
   teamListDetailsData:any = [];
-  dataSource:any = []
+  dataSource:any = [];
+  tableDataSource:any = [];
   excelData: any[] = [];
   idpcTabconfig = IDPCTabConfigList;
   selectedIndex:number = 4;
@@ -22,6 +24,10 @@ export class FinalTeamListComponent implements OnInit {
   searchText: string = "";
   excelUrl: string = 'https://docs.google.com/spreadsheets/d/12zWolSx1nM0o7KLO_khBWmDCHxU9Y0VRDH0okFbEcOc/edit?usp=sharing';
   searchControl = new FormControl('');
+  @ViewChild(MatPaginator) paginator: MatPaginator | undefined;
+  currentPageSize: number = 5 ;
+  currentPageNo: number = 0 ;
+  totalTeamList = 0;
   constructor(
     private router: Router,
     private excelService: ExcelService) {
@@ -32,6 +38,7 @@ export class FinalTeamListComponent implements OnInit {
       )
       .subscribe(searchTerm => {
         this.dataSource = this.filterByTeamName(this.teamListDetailsData, searchTerm);
+        this.filteredDataItems();
       });
   }
 
@@ -42,6 +49,9 @@ export class FinalTeamListComponent implements OnInit {
         this.generateDisplayedColumns();
         this.generateDisplayedData(2);
         this.dataSource = this.teamListDetailsData;
+        this.filteredDataItems();
+        this.totalTeamList = this.dataSource.length;
+        this.dataSource.paginator = this.paginator
         this.isLoading = false
       },
       error => {
@@ -79,5 +89,23 @@ export class FinalTeamListComponent implements OnInit {
   }
   filterByTeamName(data:any, searchValue:string) {
     return data.filter((team:any) => team.TeamName.toLowerCase().includes(searchValue.toLowerCase()));
+  }
+  filteredDataItems(){
+    let currentDataList:any = [];
+    let startIndex = this.currentPageSize*(this.currentPageNo);
+    let endIndex = this.currentPageSize*(this.currentPageNo+1);
+    for(let i = startIndex; i < this.dataSource.length && i<endIndex; i++) {
+      console.log(this.dataSource[i]);
+      currentDataList.push(this.dataSource[i]);
+    }
+    this.tableDataSource = currentDataList;
+  }
+  getTeamList(e:any){
+    this.currentPageNo = e.pageIndex;
+    this.currentPageSize= e.pageSize;
+    this.filteredDataItems();
+  }
+  ngAfterViewInit() {
+    this.dataSource.paginator = this.paginator;
   }
 }

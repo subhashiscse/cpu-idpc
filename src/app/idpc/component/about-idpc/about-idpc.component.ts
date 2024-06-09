@@ -23,4 +23,7 @@ export class AboutIdpcComponent implements OnInit {
     let url = this.idpcTabconfig[this.selectedIndex].Url;
     this.router.navigateByUrl('/'+url);
   }
+  redirectToRegistrationLink(){
+    
+  }
 }
