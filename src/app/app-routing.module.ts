@@ -3,7 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 
 const routes: Routes = [
-  { path: '**', redirectTo: '/cpuidpc' },
+  { path: '', redirectTo: '/cpuidpc', pathMatch: 'full' },
+  // { path: '**', redirectTo: '/cpuidpc' },
   {
     path: 'idpc',
     loadChildren: () => import('../app/idpc/idpc/idpc.module').then(m => m.IdpcModule),
@@ -25,5 +26,4 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-
 export class AppRoutingModule { }
