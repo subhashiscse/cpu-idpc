@@ -63,6 +63,7 @@ export class FinalTeamListComponent implements OnInit {
     let data = this.excelData[1];
     data[0]='Position';
     this.displayedColumns = data;
+    this.displayedColumns.splice(this.displayedColumns.length-1,1);
   }
   generateDisplayedData(startingRow:number){
       let count = 1;

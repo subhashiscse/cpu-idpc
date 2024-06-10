@@ -109,4 +109,22 @@ export class RegisteredTeamListComponent implements OnInit,AfterViewInit {
   ngAfterViewInit() {
     this.dataSource.paginator = this.paginator;
   }
+  elements = [
+    { PaymentStatus: 'Done' },
+    { PaymentStatus: 'Pending' },
+    { PaymentStatus: 'Overdue' }
+  ];
+
+  getButtonClass(paymentStatus: string): string {
+    switch (paymentStatus) {
+      case 'Done':
+        return 'custom-color-paid';
+      case 'Pending':
+        return 'custom-color-pending';
+      case 'Overdue':
+        return 'custom-color-overdue';
+      default:
+        return ''; // Default class if status doesn't match
+    }
+  }
 }
