@@ -1,6 +1,7 @@
 
 <div style="width: 90%; max-height: 100%;margin-top:20px;margin-left: 5%;">
-    <mat-card fxLayout="column" fxLayoutAlign="center center" fxFlex="100" class="example-card">
+    <mat-card fxLayout="column" fxFlex="100" class="example-card">
+        <h2>Seminar Details</h2>
         <mat-tab-group fxLayout="column" fxLayoutAlign="center center" class="mb-12" [(selectedIndex)]="selectedIndex" (selectedTabChange)="onTabClick($event)">
           <mat-tab label="Schedule"></mat-tab>
           <mat-tab label="Seminar Speaker"></mat-tab>
@@ -15,19 +16,20 @@
                   src="./assets/images/seminar-event.png"
               />
             </div>
-            <div *ngFor="let people of seminarSpeakerList; let i = index" fxFlex="{{this.minFlex}}" fxFlex.md="{{this.minFlex}}" fxFlex.sm="50" fxFlex.xs="100">
-                  <div fxLayoutAlign="center center">
-                      <mat-card class="dashboard__rightcontent__body__card cursor-pointer card-width">
-                          <mat-card-title-group fxLayoutAlign="center center">
-                            <img class="circle-image" mat-card-lg-image src="{{people.ImageUrl}}" >
-                          </mat-card-title-group>
-                          <mat-card-content class="text-center mt-20">
-                            <h2 class="text-center">{{people.Name}}</h2>
-                            <p class="text-center">{{people.Designation}}</p>
-                          </mat-card-content>
-                      </mat-card>
-                  </div>
-              </div>
+            <h2>Details will be coming soon</h2>
+            <!-- <div *ngFor="let people of seminarSpeakerList; let i = index" fxFlex="{{this.minFlex}}" fxFlex.md="{{this.minFlex}}" fxFlex.sm="50" fxFlex.xs="100">
+                <div fxLayoutAlign="center center">
+                    <mat-card class="dashboard__rightcontent__body__card cursor-pointer card-width">
+                        <mat-card-title-group fxLayoutAlign="center center">
+                          <img class="circle-image" mat-card-lg-image src="{{people.ImageUrl}}" >
+                        </mat-card-title-group>
+                        <mat-card-content class="text-center mt-20">
+                          <h2 class="text-center">{{people.Name}}</h2>
+                          <p class="text-center">{{people.Designation}}</p>
+                        </mat-card-content>
+                    </mat-card>
+                </div>
+            </div> -->
           </div>
         </div>
     </mat-card>

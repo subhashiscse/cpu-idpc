@@ -9,29 +9,29 @@ export const SponsorList = {
         {
             Name:'Enlight Solutions',
             Email:'test1@example.com',
-            ImageUrl: './assets/images/sponsor.jpg',
+            ImageUrl: './assets/images/enlight_solutions.png',
             About: 'Enlight Solutions Title Sponsor'
         }
     ],
     PlainumSponsor: [
         {
-            Name:'Platinum Sposor 1',
+            Name:'QA Pro Limited',
             Email:'test1@example.com',
-            ImageUrl: './assets/images/sponsor.jpg',
+            ImageUrl: './assets/images/qa_pro_limited.jpeg',
             About: 'Platinum Sponsor 2 Platinum Sponsor'
         },
         {
-            Name:'Platinum Sponsor 2',
+            Name:'Xerone IT',
             Email:'test1@example.com',
-            ImageUrl: './assets/images/sponsor.jpg',
+            ImageUrl: './assets/images/xerone_it.jpg',
             About: 'Platinum Sponsor 2 Platinum Sponsor'
         }
     ],
     GoldSponsor: [
         {
-            Name:'Gold Sponsor 1',
+            Name:'Gen Z It',
             Email:'test1@example.com',
-            ImageUrl: './assets/images/sponsor.jpg',
+            ImageUrl: './assets/images/gen_zit.jpg',
             About: 'Gold Sponsor 1 Gold Sponsor'
         }
     ]

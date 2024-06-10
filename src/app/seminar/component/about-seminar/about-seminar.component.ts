@@ -4,17 +4,16 @@ import { SeminarTabConfigList } from 'src/config/tab-config';
 export interface TimeSchedule {
   EventName: string;
   Position: number;
+  Topics: string;
   StartTime: string;
   EndTime: string;
+  Location: string;
 }
 
 const ELEMENT_DATA: TimeSchedule[] = [
-  {Position: 1, EventName: 'Registration Start Date', StartTime: "09:00 AM", EndTime: "09:00 PM"},
-  {Position: 2, EventName: 'Event Name 2', StartTime: "09:00 AM", EndTime: "09:00 PM"},
-  {Position: 3, EventName: 'Event Name 3', StartTime: "09:00 AM", EndTime: "09:00 PM"},
-  {Position: 4, EventName: 'Event Name 4', StartTime: "09:00 AM", EndTime: "09:00 PM"},
-  {Position: 5, EventName: 'Event Name 5', StartTime: "09:00 AM", EndTime: "09:00 PM"},
-  {Position: 6, EventName: 'Event Name 6', StartTime: "09:00 AM", EndTime: "09:00 PM"},
+  {Position: 1, EventName: 'Event Name 1',Topics:'Career Guideline', StartTime: "10:00 AM", EndTime: "11:00 AM",Location:"Seminar Room"},
+  {Position: 2, EventName: 'Event Name 2',Topics:'Career Guideline', StartTime: "11:00 AM", EndTime: "12:00 AM",Location:"Seminar Room"},
+  {Position: 3, EventName: 'Event Name 3',Topics:'Career Guideline', StartTime: "12:00 AM", EndTime: "13:00 PM",Location:"Seminar Room"},
 ];
 @Component({
   selector: 'app-about-seminar',
@@ -23,7 +22,7 @@ const ELEMENT_DATA: TimeSchedule[] = [
 })
 export class AboutSeminarComponent implements OnInit {
   selectedIndex: number = 0;
-  displayedColumns: string[] = ['Position', 'EventName', 'StartTime', 'EndTime'];
+  displayedColumns: string[] = ['Position', 'EventName','Topics', 'StartTime', 'EndTime','Location'];
   dataSource = ELEMENT_DATA;
   isLoading: boolean = false;
   tabconfig = SeminarTabConfigList
