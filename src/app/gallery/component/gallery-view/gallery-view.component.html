@@ -3,16 +3,13 @@
     <mat-card fxLayout="column" fxLayoutAlign="center center" fxFlex="100" class="example-card">
         <div style="width:90%" fxFlex="100" fxLayout="column" fxLayoutGap="24px" >
           <div fxFlex="100" class="my-16 mx-8 width-100" fxLayout="row wrap" fxLayoutGap="16px grid">
-              <div *ngFor="let people of galleryImageList; let i = index" fxFlex="20" fxFlex.md="20" fxFlex.sm="50" fxFlex.xs="100">
+              <div *ngFor="let image of galleryImageList; let i = index" fxFlex="25" fxFlex.md="25" fxFlex.sm="50" fxFlex.xs="100">
                   <div fxLayoutAlign="center center">
                       <mat-card class="dashboard__rightcontent__body__card cursor-pointer card-width">
                           <mat-card-title-group fxLayoutAlign="center center">
-                            <img mat-card-lg-image src="{{people.ImageUrl}}" >
+                            <img mat-card-lg-image src="{{image.ImageUrl}}" >
                           </mat-card-title-group>
-                          <!-- <mat-card-content class="text-center mt-20">
-                            <h2 class="text-center">{{people.Name}}</h2>
-                            <p class="text-center">{{people.Designation}}</p>
-                          </mat-card-content> -->
+                          <div (click)="onZoomButtonClick(image.ImageUrl)"><mat-icon class="zoom-icon">zoom_in</mat-icon></div>
                       </mat-card>
                   </div>
               </div>

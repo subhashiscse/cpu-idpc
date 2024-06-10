@@ -1,7 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AppComponent } from './app.component';
 
 const routes: Routes = [
+  { path: '', redirectTo: '/cpuidpc', pathMatch: 'full' },
+  { path: 'cpuidpc', component: AppComponent },
   {
     path: 'idpc',
     loadChildren: () => import('../app/idpc/idpc/idpc.module').then(m => m.IdpcModule),
