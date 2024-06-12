@@ -14,7 +14,7 @@ export const TabConfigList = [
 ]
 export const IDPCTabConfigList = [
     {
-        Url:'',
+        Url:'idpc',
     },
     {
         Url:'contest-rules',

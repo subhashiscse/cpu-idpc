@@ -29,7 +29,7 @@ export const SponsorList = {
     ],
     GoldSponsor: [
         {
-            Name:'Gen Z It',
+            Name:'GEN-Z iT',
             Email:'test1@example.com',
             ImageUrl: './assets/images/gen_zit.jpg',
             About: 'Gen-Z IT is committed to providing individuals with essential digital skills, such as Digital Marketing, Content Writing, Graphic Design, Web Design, and Database Management. Our unique management integrates practical training with guaranteed freelance work and internship opportunities. We allow learners to start their careers from home immediately after completing their courses.'

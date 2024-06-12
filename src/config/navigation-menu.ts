@@ -10,7 +10,7 @@ export const NavigationMenuList = [
         Name:'CONTEST',
         FxFlex: 15,
         Url: '/idpc',
-        Top: 520
+        Top: 570
         // SubeMenuList:[
         //     {
         //         Name:'About Contest',
@@ -33,7 +33,7 @@ export const NavigationMenuList = [
         Name:'SEMINAR',
         FxFlex: 15,
         Url: '/seminar',
-        Top: 520
+        Top: 570
         // SubeMenuList:[
         //     {
         //         Name:'Schedule',
@@ -69,18 +69,18 @@ export const NavigationMenuList = [
         Name:'SPONSORS',
         FxFlex: 15,
         Url: '/',
-        Top: 1080
+        Top: 1200
     },
     {
         Name:'GALLERY',
         FxFlex: 15,
         Url: '/gallery',
-        Top: 500
+        Top: 570
     },
     {
         Name:'CONTACT US',
         FxFlex: 15,
         Url: '/contact',
-        Top: 2000
+        Top: 2300
     }
 ]
