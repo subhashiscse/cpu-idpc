@@ -14,6 +14,15 @@ import { MatPaginator } from '@angular/material/paginator';
 })
 export class FinalTeamListComponent implements OnInit {
   displayedColumns: string[] = [];
+  temporaryDisplayedColumns: string[] = [
+    "Position",
+    "TeamName",
+    "NameContestant1",
+    "DepartmentContestant1",
+    "NameContestant2",
+    "DepartmentContestant2",
+    "PaymentStatus"
+  ]
   teamListDetailsData:any = [];
   dataSource:any = [];
   tableDataSource:any = [];
@@ -22,7 +31,8 @@ export class FinalTeamListComponent implements OnInit {
   selectedIndex:number = 4;
   isLoading: boolean = true;
   searchText: string = "";
-  excelUrl: string = 'https://docs.google.com/spreadsheets/d/12zWolSx1nM0o7KLO_khBWmDCHxU9Y0VRDH0okFbEcOc/edit?usp=sharing';
+  //excelUrl: string = 'https://docs.google.com/spreadsheets/d/12zWolSx1nM0o7KLO_khBWmDCHxU9Y0VRDH0okFbEcOc/edit?usp=sharing';
+  excelUrl: string = 'https://docs.google.com/spreadsheets/d/1s-DejkiLKO05kEmtFkH46UkX6DnjUmX0IM70b-oYTAU/edit?resourcekey#gid=370113001';
   searchControl = new FormControl('');
   @ViewChild(MatPaginator) paginator: MatPaginator | undefined;
   currentPageSize: number = 5 ;
@@ -60,10 +70,12 @@ export class FinalTeamListComponent implements OnInit {
     );
   }
   generateDisplayedColumns(){
-    let data = this.excelData[1];
-    data[0]='Position';
-    this.displayedColumns = data;
+    // let data = this.excelData[1];
+    // data[0]='Position';
+    // this.displayedColumns = data;
+    this.displayedColumns = this.temporaryDisplayedColumns;
     this.displayedColumns.splice(this.displayedColumns.length-1,1);
+    
   }
   generateDisplayedData(startingRow:number){
       let count = 1;

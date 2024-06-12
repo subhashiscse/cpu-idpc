@@ -7,13 +7,13 @@ export const NavigationMenuList = [
         Top: 0,
     },
     {
-        Name:'IDPC',
+        Name:'CONTEST',
         FxFlex: 15,
         Url: '/idpc',
         Top: 520
         // SubeMenuList:[
         //     {
-        //         Name:'About IDPC',
+        //         Name:'About Contest',
         //         FxFlex: 15,
         //         Url: '/idpc',
         //     },

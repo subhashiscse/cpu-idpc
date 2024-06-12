@@ -10,6 +10,7 @@ import { IDPCTabConfigList } from 'src/config/tab-config';
 export class AboutIdpcComponent implements OnInit {
   selectedIndex:number = 0;
   idpcTabconfig = IDPCTabConfigList;
+  registrationUrl: string = "https://docs.google.com/forms/d/e/1FAIpQLSfIgQhGhm1Op_0bUdUs_3NHw1TPxhUdR-Uwez2_94AOUNeKGQ/viewform";
 
   constructor(
     private router: Router) {
@@ -24,6 +25,6 @@ export class AboutIdpcComponent implements OnInit {
     this.router.navigateByUrl('/'+url);
   }
   redirectToRegistrationLink(){
-    
+    window.open(this.registrationUrl);
   }
 }

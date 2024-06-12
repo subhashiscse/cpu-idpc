@@ -6,17 +6,16 @@
           <mat-tab label="Schedule"></mat-tab>
           <mat-tab label="Seminar Speaker"></mat-tab>
         </mat-tab-group>
-        <div style="width:90%" fxFlex="100" fxLayout="column" fxLayoutGap="24px" >
-          <div fxFlex="100" class="my-16 mx-8 width-100" fxLayout="row wrap" fxLayoutGap="16px grid">
-            <div fxFlex="30">
+        <div fxLayout="row" fxLayoutAlign="start center" fxFlex="100">
+          <div fxFlex="30">
               <img
                   width="100%"
                   height="380px"
                   alt="Angular Logo"
                   src="./assets/images/seminar-event.png"
               />
-            </div>
-            <h2>Details will be coming soon</h2>
+          </div>
+          <h2 style="align-items: center;">Details will be coming soon</h2>
             <!-- <div *ngFor="let people of seminarSpeakerList; let i = index" fxFlex="{{this.minFlex}}" fxFlex.md="{{this.minFlex}}" fxFlex.sm="50" fxFlex.xs="100">
                 <div fxLayoutAlign="center center">
                     <mat-card class="dashboard__rightcontent__body__card cursor-pointer card-width">
@@ -30,7 +29,6 @@
                     </mat-card>
                 </div>
             </div> -->
-          </div>
         </div>
     </mat-card>
   </div>
