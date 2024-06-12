@@ -38,7 +38,6 @@ export class AppComponent {
     window.scrollTo({ top: this.topScoll, behavior: 'smooth' });
     this.router.navigate([navmenu.Url]);
   }
-  
   scrollToBottom(): void {
     window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
   }
