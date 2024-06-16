@@ -44,10 +44,6 @@
                         <th mat-header-cell *matHeaderCellDef> Department </th>
                         <td mat-cell *matCellDef="let element"> {{element.DepartmentContestant1}} </td>
                     </ng-container>
-                    <!-- <ng-container matColumnDef="SessionContestant1">
-                        <th mat-header-cell *matHeaderCellDef> Session </th>
-                        <td mat-cell *matCellDef="let element"> {{element.SessionContestant1}} </td>
-                    </ng-container> -->
                     <ng-container matColumnDef="NameContestant2">
                         <th mat-header-cell *matHeaderCellDef> Member 2 </th>
                         <td mat-cell *matCellDef="let element"> {{element.NameContestant2}} </td>
@@ -56,10 +52,6 @@
                         <th mat-header-cell *matHeaderCellDef> Department</th>
                         <td mat-cell *matCellDef="let element"> {{element.DepartmentContestant2}} </td>
                     </ng-container>
-                    <!-- <ng-container matColumnDef="SessionContestant2">
-                        <th mat-header-cell *matHeaderCellDef> Session </th>
-                        <td mat-cell *matCellDef="let element"> {{element.SessionContestant2}} </td>
-                    </ng-container> -->
                     <ng-container matColumnDef="PaymentStatus">
                         <th mat-header-cell *matHeaderCellDef> Payment Status</th>
                         <td  mat-cell *matCellDef="let element">  <button mat-flat-button [ngClass]="getButtonClass(element.PaymentStatus)">{{element.PaymentStatus}} </button></td>
