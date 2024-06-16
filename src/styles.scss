@@ -82,3 +82,11 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     //background-color:#78182c;
     
 }
+.slider-image-content{
+    @media screen and (min-width: 1399px) {
+       height: 750px !important;
+    }
+    @media (min-width: 1200px) and (max-width: 1399px) {
+        height: 550px !important;
+    }
+}

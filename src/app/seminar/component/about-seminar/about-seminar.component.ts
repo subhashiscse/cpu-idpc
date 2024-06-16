@@ -11,9 +11,9 @@ export interface TimeSchedule {
 }
 
 const ELEMENT_DATA: TimeSchedule[] = [
-  {Position: 1, EventName: 'Event Name 1',Topics:'Career Guideline', StartTime: "10:00 AM", EndTime: "11:00 AM",Location:"Seminar Room"},
-  {Position: 2, EventName: 'Event Name 2',Topics:'Career Guideline', StartTime: "11:00 AM", EndTime: "12:00 AM",Location:"Seminar Room"},
-  {Position: 3, EventName: 'Event Name 3',Topics:'Career Guideline', StartTime: "12:00 AM", EndTime: "13:00 PM",Location:"Seminar Room"},
+  {Position: 1, EventName: 'Seminar 1',Topics:'Career Power Play: Strategies for Professional Success', StartTime: "10:00 AM", EndTime: "11:00 AM",Location:"Seminar Room"},
+  {Position: 2, EventName: 'Seminar 2',Topics:'Cybersecurity Basics: Protecting Your Digital Life', StartTime: "11:00 AM", EndTime: "12:00 AM",Location:"Seminar Room"},
+  {Position: 3, EventName: 'Seminar 3',Topics:'Introduction to Machine Learning: Concepts and Applications', StartTime: "12:00 AM", EndTime: "13:00 PM",Location:"Seminar Room"},
 ];
 @Component({
   selector: 'app-about-seminar',
