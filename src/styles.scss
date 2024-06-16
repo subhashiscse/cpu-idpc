@@ -90,3 +90,19 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
         height: 550px !important;
     }
 }
+.title-sponsor{
+    @media screen and (min-width: 1399px) {
+       width: 25% !important;
+    }
+    @media (min-width: 1200px) and (max-width: 1399px) {
+        width: 35% !important;
+    }
+}
+.platinum-sponsor{
+    @media screen and (min-width: 1399px) {
+       width: 50% !important;
+    }
+    @media (min-width: 1200px) and (max-width: 1399px) {
+        width: 65% !important;
+    }
+}
