@@ -10,7 +10,7 @@ export const SponsorList = {
             Name:'Enlight Solutions',
             Email:'test1@example.com',
             ImageUrl: './assets/images/enlight_solutions.png',
-            About: 'Enlight Solutions Title Sponsor'
+            About: '<p>Enlight Solutions is a software development company that provide solutions, support and services to the daily life problems. We have been very successful in achieving the trust and reliance of our esteemed clients. Our commitment is to offer only quality services. We also add to value for our clients to provide interactive and affordable information technology. Our system involves software development, web development,mobile app development, enterprise solutions & enterprise management technology.</p><p>OUR VISION:To make people feel resourceful and happy with our solutions for daily life.</p><p>OUR MISSION:To build software for business which will provide solutions for daily business operations.</p><p>OUR VALUES:Quality: We ensure the quality is the highest priority.</p>'
         }
     ],
     PlainumSponsor: [
@@ -18,7 +18,7 @@ export const SponsorList = {
             Name:'QA Pro Limited',
             Email:'test1@example.com',
             ImageUrl: './assets/images/qa_pro_limited.jpeg',
-            About: 'Platinum Sponsor 2 Platinum Sponsor'
+            About: '<p>QA Pro is committed to raising excellence in the cybersecurity industry by delivering innovative solutions that meet our clients varied needs. From software quality assurance to cybersecurity and IT project management, we guarantee the highest levels of integrity and performance.</p>',
         },
         {
             Name:'Xerone IT',
