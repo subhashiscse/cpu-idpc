@@ -79,11 +79,12 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     background: rgb(225, 195, 195);
 }
 .slider-image-content{
+    height: 500px !important;
     @media screen and (min-width: 1399px) {
-       height: 750px !important;
+       height: 650px !important;
     }
     @media (min-width: 1200px) and (max-width: 1399px) {
-        height: 550px !important;
+        height: 500px !important;
     }
 }
 .title-sponsor{
@@ -99,6 +100,6 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
        width: 50% !important;
     }
     @media (min-width: 1200px) and (max-width: 1399px) {
-        width: 65% !important;
+        width: 60% !important;
     }
 }
