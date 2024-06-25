@@ -15,7 +15,7 @@ import { DataService } from './shared/services/data-service.service';
 export class AppComponent {
   slides: SlideInterface[] = [
     { url: './assets/images/slider-0.jpg', title: 'beach' },
-    { url: './assets/images/slider-00.jpg', title: 'beach' },
+    { url: './assets/images/slider-00.png', title: 'beach' },
     { url: './assets/images/slider-1.jpg', title: 'beach' },
     { url: './assets/images/slider-2.jpg', title: 'forest' },
     { url: './assets/images/slider-4.jpg', title: 'city' },
