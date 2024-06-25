@@ -35,7 +35,11 @@ export class AppComponent {
   scrollToTop(navmenu:any): void {
     this.topScoll = navmenu.Top;
     window.scrollTo({ top: this.topScoll, behavior: 'smooth' });
-    this.router.navigate([navmenu.Url]);
+    if(navmenu.Name === "HOME"){
+      this.router.navigateByUrl('');
+    } else{
+      this.router.navigate([navmenu.Url]);
+    }
   }
   scrollToBottom(): void {
     window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });

@@ -2,7 +2,7 @@ export const NavigationMenuList = [
     {
         Name:'HOME',
         FxFlex: 15,
-        Url: '',
+        Url: '/',
         SubeMenuList:[],
         Top: 0,
     },
