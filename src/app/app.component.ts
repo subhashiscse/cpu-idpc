@@ -31,9 +31,7 @@ export class AppComponent {
     private router: Router,
     public dialog: MatDialog,
     private dataService:DataService) {
-
   }
-
   scrollToTop(navmenu:any): void {
     this.topScoll = navmenu.Top;
     window.scrollTo({ top: this.topScoll, behavior: 'smooth' });
