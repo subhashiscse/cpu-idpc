@@ -1,22 +1,15 @@
 
 <div style="width: 90%; max-height: 100%;margin-top:20px;margin-left: 5%;">
-    <mat-card fxLayout="column" fxFlex="100" class="example-card">
-        <h2>Seminar Details</h2>
-        <mat-tab-group fxLayout="column" fxLayoutAlign="center center" class="mb-12" [(selectedIndex)]="selectedIndex" (selectedTabChange)="onTabClick($event)">
-          <mat-tab label="Schedule"></mat-tab>
-          <mat-tab label="Seminar Speaker"></mat-tab>
-        </mat-tab-group>
-        <div fxLayout="row" fxLayoutAlign="start center" fxFlex="100">
-          <div fxFlex="30">
-              <img
-                  width="100%"
-                  height="380px"
-                  alt="Angular Logo"
-                  src="./assets/images/seminar-event.png"
-              />
-          </div>
-          <h2 style="align-items: center;">Details will be coming soon</h2>
-            <!-- <div *ngFor="let people of seminarSpeakerList; let i = index" fxFlex="{{this.minFlex}}" fxFlex.md="{{this.minFlex}}" fxFlex.sm="50" fxFlex.xs="100">
+  <mat-card fxLayout="column" fxLayoutAlign="center center" fxFlex="100" class="example-card">
+      <mat-tab-group class="mb-12" [(selectedIndex)]="selectedIndex" (selectedTabChange)="onTabClick($event)">
+        <mat-tab label="About Seminar"></mat-tab>
+        <mat-tab label="Schedule"></mat-tab>
+        <mat-tab label="Speaker"></mat-tab>
+      </mat-tab-group>
+      <h1 class="font-weight-700">Key Note Speaker</h1>
+      <div style="width:90%" fxFlex="100" fxLayout="column" fxLayoutGap="24px" >
+        <div fxFlex="100" class="my-16 mx-8 width-100" fxLayout="row wrap" fxLayoutGap="16px grid">
+            <div *ngFor="let people of seminarSpeakerList; let i = index" fxFlex="50" fxFlex.md="50" fxFlex.sm="50" fxFlex.xs="100">
                 <div fxLayoutAlign="center center">
                     <mat-card class="dashboard__rightcontent__body__card cursor-pointer card-width">
                         <mat-card-title-group fxLayoutAlign="center center">
@@ -25,10 +18,12 @@
                         <mat-card-content class="text-center mt-20">
                           <h2 class="text-center">{{people.Name}}</h2>
                           <p class="text-center">{{people.Designation}}</p>
+                          <p class="text-center">{{people.SpecialistOn}}</p>
                         </mat-card-content>
                     </mat-card>
                 </div>
-            </div> -->
+            </div>
         </div>
-    </mat-card>
-  </div>
+      </div>
+  </mat-card>
+</div>

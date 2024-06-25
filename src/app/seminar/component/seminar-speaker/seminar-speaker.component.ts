@@ -10,7 +10,7 @@ import { SeminarTabConfigList } from 'src/config/tab-config';
 })
 export class SeminarSpeakerComponent implements OnInit {
 
-  selectedIndex: number =  1;
+  selectedIndex: number =  2;
   tabconfig = SeminarTabConfigList;
   minFlex :number = 23;
   seminarSpeakerList: any= SeminarSpeakerMemberList;

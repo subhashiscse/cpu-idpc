@@ -38,6 +38,7 @@ export class FinalTeamListComponent implements OnInit {
   currentPageSize: number = 5 ;
   currentPageNo: number = 0 ;
   totalTeamList = 0;
+  tableDataConfigPositionList:any = [1,2,3,4,9,10,18];
   constructor(
     private router: Router,
     private excelService: ExcelService) {
@@ -86,7 +87,7 @@ export class FinalTeamListComponent implements OnInit {
           break;
         }
         this.displayedColumns.forEach((rowdata,i) => {
-          data[rowdata]=data[i];
+          data[rowdata]=data[this.tableDataConfigPositionList[i]];
       });
       data.splice(0,this.displayedColumns.length);
       this.teamListDetailsData.push(data);

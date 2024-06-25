@@ -21,6 +21,7 @@ import {MatIconModule} from '@angular/material/icon';
 import { ReactiveFormsModule } from '@angular/forms';
 import {MatDialogModule} from '@angular/material/dialog';
 import { AppDialogComponent } from './dialog-modal/app-dialog/app-dialog.component';
+import { SeminarScheduleComponent } from './seminar/component/seminar-schedule/seminar-schedule.component';
 
 
 
@@ -30,7 +31,7 @@ import { AppDialogComponent } from './dialog-modal/app-dialog/app-dialog.compone
     ImageSliderComponent,
     FooterComponent,
     ContactInfoComponent,
-    AppDialogComponent
+    AppDialogComponent,
   ],
   imports: [
     BrowserModule,

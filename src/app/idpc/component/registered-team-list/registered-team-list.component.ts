@@ -37,6 +37,7 @@ export class RegisteredTeamListComponent implements OnInit,AfterViewInit {
   @ViewChild(MatPaginator) paginator: MatPaginator | undefined;
   currentPageSize: number = 5 ;
   currentPageNo: number = 0 ;
+  tableDataConfigPositionList:any = [1,2,3,4,9,10,17];
   constructor(
     private router: Router,
     private excelService: ExcelService) { 
@@ -89,7 +90,7 @@ export class RegisteredTeamListComponent implements OnInit,AfterViewInit {
           break;
         }
         this.displayedColumns.forEach((rowdata,i) => {
-          data[rowdata]=data[i];
+          data[rowdata]=data[this.tableDataConfigPositionList[i]];
       });
       data.splice(0,this.displayedColumns.length);
       this.teamListDetailsData.push(data);

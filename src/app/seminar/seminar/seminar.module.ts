@@ -10,12 +10,14 @@ import { MatTableModule } from '@angular/material/table';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { SeminarSpeakerComponent } from '../component/seminar-speaker/seminar-speaker.component';
+import { SeminarScheduleComponent } from '../component/seminar-schedule/seminar-schedule.component';
 
 
 @NgModule({
   declarations: [
     AboutSeminarComponent,
-    SeminarSpeakerComponent
+    SeminarSpeakerComponent,
+    SeminarScheduleComponent
   ],
   imports: [
     CommonModule,

@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutSeminarComponent } from '../component/about-seminar/about-seminar.component';
+import { SeminarScheduleComponent } from '../component/seminar-schedule/seminar-schedule.component';
 import { SeminarSpeakerComponent } from '../component/seminar-speaker/seminar-speaker.component';
 
 const routes: Routes = [
@@ -9,13 +10,17 @@ const routes: Routes = [
     component: AboutSeminarComponent
   },
   {
-    path: 'schedule',
+    path: 'about',
     component: AboutSeminarComponent
   },
-  {
-    path: 'seminar-speaker',
-    component: SeminarSpeakerComponent
-  }
+  // {
+  //   path: 'schedule',
+  //   component: SeminarScheduleComponent
+  // },
+  // {
+  //   path: 'seminar-speaker',
+  //   component: SeminarSpeakerComponent
+  // }
 ];
 @NgModule({
   imports: [RouterModule.forChild(routes)],

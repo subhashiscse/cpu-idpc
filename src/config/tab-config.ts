@@ -31,6 +31,9 @@ export const IDPCTabConfigList = [
 ]
 export const SeminarTabConfigList = [
     {
+        Url:'about',
+    },
+    {
         Url:'schedule',
     },
     {
