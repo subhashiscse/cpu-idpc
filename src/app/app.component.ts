@@ -21,7 +21,7 @@ export class AppComponent {
     { url: './assets/images/slider-4.jpg', title: 'city' },
     { url: './assets/images/slider-5.jpg', title: 'city' },
     { url: './assets/images/slider-6.jpg', title: 'city' }
-  ];
+  ]; 
   titleSponsorList: any = SponsorList.TitleSponsor;
   platinumSponsorList: any = SponsorList.PlainumSponsor;
   goldSponsorList: any = SponsorList.GoldSponsor;
