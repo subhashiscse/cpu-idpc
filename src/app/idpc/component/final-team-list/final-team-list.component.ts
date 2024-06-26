@@ -58,7 +58,7 @@ export class FinalTeamListComponent implements OnInit {
       data => {
         this.excelData = this.excelService.readExcelFile(data,0);
         this.generateDisplayedColumns();
-        this.generateDisplayedData(2);
+        this.generateDisplayedData(3);
         this.dataSource = this.teamListDetailsData;
         this.filteredDataItems();
         this.totalTeamList = this.dataSource.length;
@@ -75,12 +75,11 @@ export class FinalTeamListComponent implements OnInit {
     // data[0]='Position';
     // this.displayedColumns = data;
     this.displayedColumns = this.temporaryDisplayedColumns;
-    this.displayedColumns.splice(this.displayedColumns.length-1,1);
     
   }
   generateDisplayedData(startingRow:number){
-      let count = 1;
-      while(startingRow>=0){
+    let count = 1;
+    while(startingRow<=100){
         let data = this.excelData[startingRow];
         data[0]=count;
         if(data.length==1){
@@ -89,11 +88,15 @@ export class FinalTeamListComponent implements OnInit {
         this.displayedColumns.forEach((rowdata,i) => {
           data[rowdata]=data[this.tableDataConfigPositionList[i]];
       });
-      data.splice(0,this.displayedColumns.length);
-      this.teamListDetailsData.push(data);
+      if(data.PaymentStatus === "Done") {
+        data.splice(0,this.displayedColumns.length);
+        this.teamListDetailsData.push(data);
+      }
       count++;
       startingRow++;
     }
+    this.displayedColumns = this.temporaryDisplayedColumns;
+    this.displayedColumns.splice(this.displayedColumns.length-1,1);
   }
 
   onTabClick(e:any){

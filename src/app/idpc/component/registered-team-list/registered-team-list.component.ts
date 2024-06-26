@@ -37,7 +37,7 @@ export class RegisteredTeamListComponent implements OnInit,AfterViewInit {
   @ViewChild(MatPaginator) paginator: MatPaginator | undefined;
   currentPageSize: number = 5 ;
   currentPageNo: number = 0 ;
-  tableDataConfigPositionList:any = [1,2,3,4,9,10,17];
+  tableDataConfigPositionList:any = [1,2,3,4,9,10,18];
   constructor(
     private router: Router,
     private excelService: ExcelService) { 
@@ -58,7 +58,7 @@ export class RegisteredTeamListComponent implements OnInit,AfterViewInit {
       data => {
         this.excelData = this.excelService.readExcelFile(data,0);
         this.generateDisplayedColumns();
-        this.generateDisplayedData(2);
+        this.generateDisplayedData(3);
         this.dataSource = this.teamListDetailsData;
         this.filteredDataItems();
         this.totalTeamList = this.dataSource.length;
@@ -83,7 +83,7 @@ export class RegisteredTeamListComponent implements OnInit,AfterViewInit {
   }
   generateDisplayedData(startingRow:number){
       let count = 1;
-      while(startingRow>=0){
+      while(startingRow<=100){
         let data = this.excelData[startingRow];
         data[0]=count;
         if(data.length==1){
