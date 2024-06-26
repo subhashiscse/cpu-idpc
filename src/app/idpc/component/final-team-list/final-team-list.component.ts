@@ -79,7 +79,7 @@ export class FinalTeamListComponent implements OnInit {
   }
   generateDisplayedData(startingRow:number){
     let count = 1;
-    while(startingRow<=100){
+    while(startingRow>=0){
         let data = this.excelData[startingRow];
         data[0]=count;
         if(data.length==1){
