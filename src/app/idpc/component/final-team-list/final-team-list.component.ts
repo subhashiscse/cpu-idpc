@@ -97,6 +97,12 @@ export class FinalTeamListComponent implements OnInit {
     }
     this.displayedColumns = this.temporaryDisplayedColumns;
     this.displayedColumns.splice(this.displayedColumns.length-1,1);
+    this.teamListDetailsData = this.arrSort(this.teamListDetailsData);
+  }
+  arrSort(arr:any) {
+      arr.sort((a:any,b:any)=>a-b);
+      arr.reverse();
+      return arr;
   }
 
   onTabClick(e:any){
