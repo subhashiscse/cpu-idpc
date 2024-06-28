@@ -16,6 +16,7 @@ export class IdpcScheduleComponent implements OnInit {
   selectedIndex:number = 2;
   idpcTabconfig = IDPCTabConfigList;
   isLoading: boolean = true;
+  registrationUrl: string = "https://docs.google.com/forms/d/e/1FAIpQLSfIgQhGhm1Op_0bUdUs_3NHw1TPxhUdR-Uwez2_94AOUNeKGQ/viewform";
   excelUrl: string = 'https://docs.google.com/spreadsheets/d/1vtkTMVeys3uBJ-CSF0zvPpErBXd1kO59OD6sf7Bq9ok/edit?usp=sharing'; // Replace with your URL
 
   constructor(
@@ -65,5 +66,8 @@ export class IdpcScheduleComponent implements OnInit {
     this.selectedIndex = e.index;
     let url = this.idpcTabconfig[this.selectedIndex].Url;
     this.router.navigateByUrl('/'+url);
+  }
+  redirectToRegistrationLink(){
+    window.open(this.registrationUrl);
   }
 }

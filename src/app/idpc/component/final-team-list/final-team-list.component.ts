@@ -31,7 +31,7 @@ export class FinalTeamListComponent implements OnInit {
   selectedIndex:number = 4;
   isLoading: boolean = true;
   searchText: string = "";
-  //excelUrl: string = 'https://docs.google.com/spreadsheets/d/12zWolSx1nM0o7KLO_khBWmDCHxU9Y0VRDH0okFbEcOc/edit?usp=sharing';
+  registrationUrl: string = "https://docs.google.com/forms/d/e/1FAIpQLSfIgQhGhm1Op_0bUdUs_3NHw1TPxhUdR-Uwez2_94AOUNeKGQ/viewform";
   excelUrl: string = 'https://docs.google.com/spreadsheets/d/1s-DejkiLKO05kEmtFkH46UkX6DnjUmX0IM70b-oYTAU/edit?resourcekey#gid=370113001';
   searchControl = new FormControl('');
   @ViewChild(MatPaginator) paginator: MatPaginator | undefined;
@@ -130,5 +130,8 @@ export class FinalTeamListComponent implements OnInit {
   }
   ngAfterViewInit() {
     this.dataSource.paginator = this.paginator;
+  }
+  redirectToRegistrationLink(){
+    window.open(this.registrationUrl);
   }
 }
