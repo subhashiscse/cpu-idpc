@@ -93,6 +93,7 @@ export class RegisteredTeamListComponent implements OnInit,AfterViewInit {
           data[rowdata]=data[this.tableDataConfigPositionList[i]];
       });
       data.splice(0,this.displayedColumns.length);
+      data.PaymentStatus = data.PaymentStatus? data.PaymentStatus : "Pending";
       this.teamListDetailsData.push(data);
       count++;
       startingRow++;
@@ -132,11 +133,6 @@ export class RegisteredTeamListComponent implements OnInit,AfterViewInit {
   ngAfterViewInit() {
     this.dataSource.paginator = this.paginator;
   }
-  elements = [
-    { PaymentStatus: 'Done' },
-    { PaymentStatus: 'Pending' },
-    { PaymentStatus: 'Overdue' }
-  ];
 
   getButtonClass(paymentStatus: string): string {
     switch (paymentStatus) {
